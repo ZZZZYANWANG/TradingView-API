@@ -1,0 +1,28 @@
+name: public-index-alpha-smoke
+
+on:
+  push:
+    branches:
+      - research/public-index-entry-alpha-compute
+    paths:
+      - ".github/workflows/public-index-alpha-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify public runner
+        run: |
+          python - <<'PY'
+          import json, platform, sys
+          print(json.dumps({"python": sys.version, "platform": platform.platform()}))
+          PY
