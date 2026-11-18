@@ -1,0 +1,48 @@
+kline_parts=150/897 usable=150
+kline_parts=300/897 usable=300
+kline_parts=450/897 usable=450
+kline_parts=600/897 usable=600
+kline_parts=750/897 usable=750
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+external_loaded=BTCUSDT metrics=53954 funding=7395
+external_loaded=ETHUSDT metrics=43022 funding=7395
+external_loaded=BNBUSDT metrics=43022 funding=7274
+external_loaded=XRPUSDT metrics=43022 funding=7379
+external_loaded=ADAUSDT metrics=43022 funding=7339
+external_loaded=DOGEUSDT metrics=43022 funding=6821
+external_loaded=LTCUSDT metrics=43022 funding=7370
+external_loaded=BCHUSDT metrics=43022 funding=7395
+external_loaded=LINKUSDT metrics=43022 funding=7346
+external_loaded=ETCUSDT metrics=43022 funding=7349
+external_loaded=XLMUSDT metrics=42998 funding=7339
+external_loaded=DOTUSDT metrics=43022 funding=6698
+external_loaded=SOLUSDT metrics=43022 funding=6700
+local_features=ADAUSDT rows=50376
+local_features=BCHUSDT rows=50376
+local_features=BNBUSDT rows=50376
+local_features=BTCUSDT rows=50376
+local_features=DOGEUSDT rows=50376
+local_features=DOTUSDT rows=50376
+local_features=ETCUSDT rows=50376
+local_features=ETHUSDT rows=50376
+local_features=LINKUSDT rows=50376
+local_features=LTCUSDT rows=50256
+local_features=SOLUSDT rows=50256
+local_features=XLMUSDT rows=50256
+local_features=XRPUSDT rows=50256
+{
+  "error": "ValueError: underlying array is read-only",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 1061, in <module>\n    main()\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 919, in main\n    weights, directed, graph_audit = build_graph(local_panel)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 374, in build_graph\n    np.fill_diagonal(corr, 0.0)\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/numpy/lib/_index_tricks_impl.py\", line 923, in fill_diagonal\n    a.flat[:end:step] = val\n    ~~~~~~^^^^^^^^^^^\nValueError: underlying array is read-only\n"
+}
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 1061, in <module>
+    main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 919, in main
+    weights, directed, graph_audit = build_graph(local_panel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 374, in build_graph
+    np.fill_diagonal(corr, 0.0)
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/numpy/lib/_index_tricks_impl.py", line 923, in fill_diagonal
+    a.flat[:end:step] = val
+    ~~~~~~^^^^^^^^^^^
+ValueError: underlying array is read-only
