@@ -1,0 +1,30 @@
+binance=160/1820 spot=160 perp=0
+binance=320/1820 spot=320 perp=0
+binance=480/1820 spot=480 perp=0
+binance=640/1820 spot=640 perp=0
+binance=800/1820 spot=800 perp=0
+binance=960/1820 spot=910 perp=50
+binance=1120/1820 spot=910 perp=210
+binance=1280/1820 spot=910 perp=370
+binance=1440/1820 spot=910 perp=530
+binance=1600/1820 spot=910 perp=690
+binance=1760/1820 spot=910 perp=850
+metrics=200/910 usable=0
+metrics=400/910 usable=0
+metrics=600/910 usable=0
+metrics=800/910 usable=0
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py", line 229, in <module>
+    raw,metadata=core.load_futures(); metrics,metric_errors=load_metrics(); merged=merge_metrics(raw,metrics)
+                                                            ^^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py", line 112, in load_metrics
+    raise RuntimeError("no metrics data")
+RuntimeError: no metrics data
+
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py", line 229, in <module>
+    raw,metadata=core.load_futures(); metrics,metric_errors=load_metrics(); merged=merge_metrics(raw,metrics)
+                                                            ^^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py", line 112, in load_metrics
+    raise RuntimeError("no metrics data")
+RuntimeError: no metrics data

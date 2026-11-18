@@ -1,0 +1,4 @@
+{
+  "error": "RuntimeError: no metrics data",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py\", line 229, in <module>\n    raw,metadata=core.load_futures(); metrics,metric_errors=load_metrics(); merged=merge_metrics(raw,metrics)\n                                                            ^^^^^^^^^^^^^^\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round11/run_oi_source_sink.py\", line 112, in load_metrics\n    raise RuntimeError(\"no metrics data\")\nRuntimeError: no metrics data\n"
+}
