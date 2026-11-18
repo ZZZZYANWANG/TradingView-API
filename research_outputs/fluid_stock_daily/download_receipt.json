@@ -1,0 +1,802 @@
+[
+  {
+    "code": "sh.600010",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600015",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600028",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600009",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600018",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600000",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600016",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600050",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600104",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600036",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600061",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600048",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600031",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600085",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600111",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600115",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600309",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600276",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600406",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600196",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600362",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600519",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600585",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600547",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600588",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600660",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600570",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600741",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600690",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600886",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600795",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600893",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.600900",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600999",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600887",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.600019",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600029",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600030",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600958",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601021",
+    "ok": false,
+    "error": "empty_daily"
+  },
+  {
+    "code": "sh.601009",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601006",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601166",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601288",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601225",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601111",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601088",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601328",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601318",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601390",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601377",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601398",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601336",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601600",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601601",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601169",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601668",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601633",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601669",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601628",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601800",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601788",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601688",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601766",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601818",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601857",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601899",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601888",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601877",
+    "ok": true,
+    "rows": 2396
+  },
+  {
+    "code": "sh.601985",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601901",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601919",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sz.000001",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000002",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601939",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sz.000063",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601998",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sz.000333",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000338",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000166",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.603993",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601186",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.601211",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000538",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000568",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000725",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601988",
+    "ok": true,
+    "rows": 2000
+  },
+  {
+    "code": "sh.601618",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000895",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000157",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000100",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002027",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.001979",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000425",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002230",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002241",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002236",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000625",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000776",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000651",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000768",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002736",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002475",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000858",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.300033",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002594",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000938",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.000963",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600926",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002142",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002352",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002304",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002415",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.300015",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.600489",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002252",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000876",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002714",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.300059",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.603799",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.300124",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600436",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600919",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600332",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601607",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601117",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601881",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.601229",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600176",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.600011",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600346",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601012",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600809",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601878",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002460",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.601238",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601838",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.300122",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600025",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002466",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600438",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002493",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.300433",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.600089",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sz.002007",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.300408",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.600837",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002601",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601066",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.603986",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002001",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.603259",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601138",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.600188",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600233",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.601360",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.002050",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601989",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.603288",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600760",
+    "ok": false,
+    "error": "网络接收错误。"
+  }
+]
