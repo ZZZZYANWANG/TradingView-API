@@ -1,0 +1,4 @@
+{
+  "error": "RuntimeError: only 0 usable stock histories",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run_stock_only.py\", line 21, in <module>\n    raw, metadata = core.load_stocks()\n                    ^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py\", line 378, in load_stocks\n    raise RuntimeError(f\"only {len(frames)} usable stock histories\")\nRuntimeError: only 0 usable stock histories\n"
+}
