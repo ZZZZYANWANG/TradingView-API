@@ -1,0 +1,11 @@
+{
+  "candidate_columns": 100,
+  "candidate_families": 7,
+  "decision": "promote_only_if_PROMOTED_nonempty",
+  "development_engine": "batched_vectorized_equivalent",
+  "development_tests": 700,
+  "holdout_opened": 0,
+  "promoted": [],
+  "validation_gate_passed": 0,
+  "validation_winners": 7
+}

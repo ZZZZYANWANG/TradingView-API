@@ -1,0 +1,83 @@
+kline_parts=150/897 usable=150
+kline_parts=300/897 usable=300
+kline_parts=450/897 usable=450
+kline_parts=600/897 usable=600
+kline_parts=750/897 usable=750
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+external_loaded=BTCUSDT metrics=53954 funding=7395
+external_loaded=ETHUSDT metrics=43022 funding=7395
+external_loaded=BNBUSDT metrics=43022 funding=7274
+external_loaded=XRPUSDT metrics=43022 funding=7379
+external_loaded=ADAUSDT metrics=43022 funding=7339
+external_loaded=DOGEUSDT metrics=43022 funding=6821
+external_loaded=LTCUSDT metrics=43022 funding=7370
+external_loaded=BCHUSDT metrics=43022 funding=7395
+external_loaded=LINKUSDT metrics=43022 funding=7346
+external_loaded=ETCUSDT metrics=43022 funding=7349
+external_loaded=XLMUSDT metrics=42998 funding=7339
+external_loaded=DOTUSDT metrics=43022 funding=6698
+external_loaded=SOLUSDT metrics=43022 funding=6700
+local_features=ADAUSDT rows=50376
+local_features=BCHUSDT rows=50376
+local_features=BNBUSDT rows=50376
+local_features=BTCUSDT rows=50376
+local_features=DOGEUSDT rows=50376
+local_features=DOTUSDT rows=50376
+local_features=ETCUSDT rows=50376
+local_features=ETHUSDT rows=50376
+local_features=LINKUSDT rows=50376
+local_features=LTCUSDT rows=50256
+local_features=SOLUSDT rows=50256
+local_features=XLMUSDT rows=50256
+local_features=XRPUSDT rows=50256
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+batch_development_horizon=4 rows=100
+batch_development_horizon=12 rows=100
+batch_development_horizon=24 rows=100
+batch_development_horizon=72 rows=100
+batch_development_horizon=120 rows=100
+batch_development_horizon=240 rows=100
+batch_development_horizon=480 rows=100
+validation_complete=baroclinic_reattachment factor=torque_contraction_ewm72
+validation_complete=baroclinic_torque factor=baroclinic_funding_ewm24
+validation_complete=ekman_impedance factor=wave_action_gradient_ewm6
+validation_complete=kelvin_circulation factor=kelvin_reconnection_ewm12
+validation_complete=potential_vorticity factor=pv_pressure_release_ewm72
+validation_complete=source_coupling factor=source_supported_torque_ewm72
+validation_complete=vortex_stretching factor=vortex_stretch_ewm72
+{
+  "candidate_columns": 100,
+  "candidate_families": 7,
+  "decision": "promote_only_if_PROMOTED_nonempty",
+  "development_engine": "batched_vectorized_equivalent",
+  "development_tests": 700,
+  "holdout_opened": 0,
+  "promoted": [],
+  "validation_gate_passed": 0,
+  "validation_winners": 7
+}
