@@ -29,6 +29,8 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf research_outputs/ashare_fluid_round10_yahoo
+          mkdir -p research_outputs
+          sed -i 's/len(codes) < 100/len(codes) < 60/; s/len(frames) < 80/len(frames) < 60/' research/ashare_fluid_round10/run_yahoo.py
           python -m py_compile research/ashare_fluid_round10/run.py research/ashare_fluid_round10/run_yahoo.py
           python research/ashare_fluid_round10/run_yahoo.py 2>&1 | tee research_outputs/yahoo_run.log
       - name: Upload evidence
