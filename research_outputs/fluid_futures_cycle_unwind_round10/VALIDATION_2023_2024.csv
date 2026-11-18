@@ -1,0 +1,2 @@
+factor,horizon,sign,cs_ic,positive_share,n_times,bootstrap_low,bootstrap_high,p_nonpositive,ridge_gain,residual_cs_ic,ts_ic_diagnostic,ts_positive_share,max_baseline_corr,max_corr_feature,net_sharpe_2bp,annual_log_return_2bp,avg_turnover,years
+cycle_to_shear_72_ewm24,120,1,0.015329419439008478,0.5,146,-0.04094096542726681,0.0831987932159165,0.32,-0.0006518979981265677,0.010763209393346379,-0.012349011404278291,0.625,0.0720673966059801,basis_velocity_z,-1.0326716047609161,-0.1994407028768092,1.3545894356240815,"{""2023"": -0.09586057146649493, ""2024"": -0.3030208342871235}"
