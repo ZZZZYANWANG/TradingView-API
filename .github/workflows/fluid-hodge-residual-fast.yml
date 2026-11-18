@@ -34,12 +34,12 @@ jobs:
       - name: Run focused Hodge residual replication
         env:
           PYTHONHASHSEED: '0'
-          OUT_DIR: research_outputs/fluid_hodge_residual_fast
+          PYTHONPATH: ${{ github.workspace }}/research/fluid_hodge_futures
+          OUT_DIR: ${{ github.workspace }}/research_outputs/fluid_hodge_residual_fast
         run: |
           mkdir -p research_outputs/fluid_hodge_residual_fast
           set -o pipefail
-          cd research/fluid_hodge_futures
-          python refine_hodge_residual_fast.py | tee ../../research_outputs/fluid_hodge_residual_fast/run.log
+          python research/fluid_hodge_futures/refine_hodge_residual_fast.py | tee research_outputs/fluid_hodge_residual_fast/run.log
       - name: Print decision evidence
         if: always()
         run: |
