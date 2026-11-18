@@ -26,9 +26,12 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install numpy pandas scipy scikit-learn requests pyarrow huggingface-hub tabulate
       - name: Run baroclinic torque research
+        shell: bash
         run: |
+          set -o pipefail
           rm -rf research_outputs/fluid_baroclinic_torque_round13
           mkdir -p research_outputs/fluid_baroclinic_torque_round13
+          sed -i 's/\.to_numpy(dtype=float)/.to_numpy(dtype=float, copy=True)/' research/fluid_round13/run_baroclinic_torque.py
           python research/fluid_round13/run_baroclinic_torque.py 2>&1 | tee research_outputs/fluid_baroclinic_torque_round13/run.log
       - name: Commit evidence
         if: always()
