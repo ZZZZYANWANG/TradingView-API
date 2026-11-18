@@ -30,19 +30,53 @@ local_features=LTCUSDT rows=50256
 local_features=SOLUSDT rows=50256
 local_features=XLMUSDT rows=50256
 local_features=XRPUSDT rows=50256
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+development_complete=baroclinic_torque
+development_complete=potential_vorticity
+development_complete=vortex_stretching
+development_complete=kelvin_circulation
+development_complete=ekman_impedance
+development_complete=baroclinic_reattachment
+development_complete=source_coupling
+validation_complete=baroclinic_reattachment factor=pressure_density_reconnect_z
+validation_complete=baroclinic_torque factor=baroclinic_funding_ewm24
+validation_complete=ekman_impedance factor=wave_action_gradient_ewm6
+validation_complete=kelvin_circulation factor=kelvin_reconnection_ewm12
+validation_complete=potential_vorticity factor=pv_pressure_release_ewm72
+validation_complete=source_coupling factor=source_supported_torque_ewm6
+validation_complete=vortex_stretching factor=vortex_stretch_ewm72
 {
-  "error": "ValueError: dropna must be unspecified as the new implementation does not introduce rows of NA values. This argument will be removed in a future version of pandas.",
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 1061, in <module>\n    main()\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 920, in main\n    graph_panel = graph_state(local_panel, weights, directed)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py\", line 529, in graph_state\n    flat = pd.DataFrame(values, index=times, columns=SYMBOLS).stack(dropna=False)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/pandas/core/frame.py\", line 14364, in stack\n    raise ValueError(\nValueError: dropna must be unspecified as the new implementation does not introduce rows of NA values. This argument will be removed in a future version of pandas.\n"
+  "candidate_columns": 100,
+  "candidate_families": 7,
+  "decision": "promote_only_if_PROMOTED_nonempty",
+  "development_tests": 700,
+  "holdout_opened": 0,
+  "promoted": [],
+  "validation_gate_passed": 0,
+  "validation_winners": 7
 }
-Traceback (most recent call last):
-  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 1061, in <module>
-    main()
-  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 920, in main
-    graph_panel = graph_state(local_panel, weights, directed)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py", line 529, in graph_state
-    flat = pd.DataFrame(values, index=times, columns=SYMBOLS).stack(dropna=False)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/pandas/core/frame.py", line 14364, in stack
-    raise ValueError(
-ValueError: dropna must be unspecified as the new implementation does not introduce rows of NA values. This argument will be removed in a future version of pandas.
