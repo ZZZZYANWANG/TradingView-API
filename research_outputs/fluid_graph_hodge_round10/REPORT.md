@@ -1,0 +1,37 @@
+# Dynamic Graph Helmholtz–Hodge Fluid Factor Test
+
+The graph is estimated only from preceding sector-neutral returns and is refreshed every 21 sessions.
+Antisymmetric lagged activity–velocity edge flow is decomposed into a graph-gradient pressure field and a circulation residual.
+
+## Development family winners
+
+| factor                              | family                        |   horizon |   sign |   development_cs_ic |   development_positive_share |   development_bootstrap_low |
+|:------------------------------------|:------------------------------|----------:|-------:|--------------------:|-----------------------------:|----------------------------:|
+| cycle_trap_ewm5                     | cycle_trap                    |        10 |      1 |          0.0173066  |                     0.539773 |                -0.00146164  |
+| cycle_unwind_ewm20                  | cycle_unwind                  |        20 |     -1 |          0.0216885  |                     0.534091 |                -0.00206523  |
+| divergence_absorption_ewm5          | divergence_absorption         |        10 |      1 |          0.0183749  |                     0.573864 |                -0.00123796  |
+| hodge_state_consensus_ewm10         | hodge_state_consensus         |        10 |      1 |          0.0131559  |                     0.534091 |                -0.00576133  |
+| potential_pressure_release_ewm5     | potential_pressure_release    |        10 |     -1 |          0.0199942  |                     0.5625   |                 0.00013688  |
+| pressure_absorption_consensus_ewm20 | pressure_absorption_consensus |        10 |     -1 |          0.00644267 |                     0.522727 |                -0.0132529   |
+| pressure_cycle_conversion_ewm5      | pressure_cycle_conversion     |        20 |     -1 |          0.0248869  |                     0.590909 |                -0.00356889  |
+| selective_pressure_release_ewm5     | selective_pressure_release    |        10 |     -1 |          0.0199089  |                     0.539773 |                -0.000700214 |
+
+## 2021–2023 validation
+
+| factor                              |   horizon |   sign |       cs_ic |   positive_share |   n_times |   bootstrap_low |   bootstrap_high |   p_nonpositive |   ridge_gain |   residual_cs_ic |   max_baseline_corr | max_corr_feature   |   net_sharpe_10bp |   annual_log_return_10bp |   avg_turnover | years                                                                                        | family                        |   development_cs_ic |   selection_score | validation_gate   |
+|:------------------------------------|----------:|-------:|------------:|-----------------:|----------:|----------------:|-----------------:|----------------:|-------------:|-----------------:|--------------------:|:-------------------|------------------:|-------------------------:|---------------:|:---------------------------------------------------------------------------------------------|:------------------------------|--------------------:|------------------:|:------------------|
+| divergence_absorption_ewm5          |        10 |      1 |  0.0191265  |         0.626667 |        75 |      -0.00795   |       0.054463   |         0.0975  |  0.000225647 |       0.0193199  |           0.0467736 | graph_pressure     |        -0.246079  |              -0.00975133 |       1.30278  | {"2021": -0.018210758849938172, "2022": -0.043162620521613425, "2023": 0.032351569777802}    | divergence_absorption         |          0.0183749  |        0.0358545  | False             |
+| hodge_state_consensus_ewm10         |        10 |      1 |  0.0168264  |         0.546667 |        75 |      -0.0153337 |       0.0472628  |         0.17625 | -0.000193134 |       0.0154363  |           0.65879   | mom20_gap          |        -0.26093   |              -0.0115547  |       1.0033   | {"2021": 0.006384923705380517, "2022": -0.10991068629587127, "2023": 0.0691368221741133}     | hodge_state_consensus         |          0.0131559  |        0.0261476  | False             |
+| cycle_unwind_ewm20                  |        20 |     -1 |  0.00293085 |         0.486486 |        37 |      -0.0332279 |       0.0349183  |         0.455   |  3.90763e-05 |      -0.00014235 |           0.0435297 | mom60              |        -0.0312987 |              -0.0016246  |       1.28074  | {"2021": -0.011255968233627697, "2022": 0.013869186657820791, "2023": -0.007383875827165228} | cycle_unwind                  |          0.0216885  |        0.00308254 | False             |
+| pressure_cycle_conversion_ewm5      |        20 |     -1 | -0.0167973  |         0.513514 |        37 |      -0.0625498 |       0.00780537 |         0.91125 | -0.000791586 |      -0.0118599  |           0.0733846 | graph_divergence   |        -0.550162  |              -0.022758   |       1.32347  | {"2021": 0.004947642993455076, "2022": -0.08224882555521947, "2023": 0.010472245697296}      | pressure_cycle_conversion     |          0.0248869  |       -0.0364018  | False             |
+| cycle_trap_ewm5                     |        10 |      1 | -0.0123405  |         0.413333 |        75 |      -0.0527205 |       0.0173961  |         0.8425  | -0.00148439  |      -0.0297778  |           0.816926  | mom20_gap          |        -1.00245   |              -0.0449471  |       0.885243 | {"2021": -0.023131926062369638, "2022": -0.12346415189651053, "2023": 0.012824959120501207}  | cycle_trap                    |          0.0173066  |       -0.0560181  | False             |
+| pressure_absorption_consensus_ewm20 |        10 |     -1 | -0.0404069  |         0.426667 |        75 |      -0.0765203 |      -0.00470255 |         0.99    |  6.94244e-05 |      -0.0330592  |           0.279735  | graph_pressure     |        -1.78941   |              -0.0716489  |       1.04387  | {"2021": -0.0341735786476196, "2022": -0.03273032001434502, "2023": -0.14633680538920782}    | pressure_absorption_consensus |          0.00644267 |       -0.0733177  | False             |
+| potential_pressure_release_ewm5     |        10 |     -1 | -0.0350332  |         0.426667 |        75 |      -0.0706445 |       0.00432352 |         0.96    | -0.000592622 |      -0.0381058  |           0.676762  | graph_pressure     |        -2.02162   |              -0.0814596  |       1.31406  | {"2021": -0.12059541361063747, "2022": -0.049489926708610306, "2023": -0.0723539038497029}   | potential_pressure_release    |          0.0199942  |       -0.0796046  | False             |
+| selective_pressure_release_ewm5     |        10 |     -1 | -0.0401607  |         0.426667 |        75 |      -0.0717948 |      -0.00666164 |         0.99    | -0.000620073 |      -0.0461077  |           0.665831  | graph_pressure     |        -2.28514   |              -0.0872761  |       1.31159  | {"2021": -0.12377230232421463, "2022": -0.06144450716848648, "2023": -0.07453356423255929}   | selective_pressure_release    |          0.0199089  |       -0.0913426  | False             |
+
+No candidate cleared the frozen validation gate; confirmation remained sealed.
+
+Final pass: **False**
+
+The current large-cap universe is fixed and therefore retains survivorship-selection risk.
+Even a final pass is historical/default-off pending point-in-time A-share replication.
