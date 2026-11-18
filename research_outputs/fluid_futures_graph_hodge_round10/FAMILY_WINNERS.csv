@@ -1,0 +1,7 @@
+factor,family,horizon,sign,development_ts_ic,development_positive_share
+cross_basis_pressure_release_ewm72,cross_basis_pressure_release,120,-1,0.022411370658919308,0.625
+cross_cycle_trap_ewm12,cross_cycle_trap,24,1,0.06286231296680271,1.0
+cross_cycle_unwind_ewm12,cross_cycle_unwind,120,1,0.032789678239300395,0.75
+cross_hodge_consensus_ewm12,cross_hodge_consensus,12,1,0.05797235973379693,1.0
+cross_pressure_basis_conversion_ewm72,cross_pressure_basis_conversion,120,-1,0.07737641863286117,0.625
+cross_shear_absorption_ewm12,cross_shear_absorption,72,1,0.030583889390929406,0.625

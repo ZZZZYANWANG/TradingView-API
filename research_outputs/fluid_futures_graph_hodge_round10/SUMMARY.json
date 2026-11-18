@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-11-18 05:18:40.044615+00:00",
+  "data": {
+    "requested_symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "BNBUSDT",
+      "XRPUSDT",
+      "ADAUSDT",
+      "DOGEUSDT",
+      "LINKUSDT",
+      "SOLUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "SOLUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 408608,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 408848,
+    "perp_rows": 408720,
+    "errors": []
+  },
+  "mechanism": "cross-asset graph Hodge decomposition of spot-perpetual shear/activity edge flow",
+  "selected_factor": null,
+  "selected_horizon": null,
+  "selected_sign": null,
+  "confirmation": null,
+  "shadow": null,
+  "final_pass": false,
+  "governance": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "confirmation": "2025",
+    "shadow": "2026",
+    "confirmation_sealed_until_validation": true
+  }
+}
