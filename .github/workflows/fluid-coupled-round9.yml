@@ -1,0 +1,63 @@
+name: Fluid Coupled Round 9
+
+on:
+  push:
+    branches:
+      - research-fluid-coupled-round9-20261118
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests tabulate
+
+      - name: Validate source
+        run: python -m py_compile research/fluid_round9/run.py
+
+      - name: Run real-data fluid research
+        env:
+          PYTHONHASHSEED: '0'
+        run: |
+          rm -rf research_outputs/fluid_round9
+          mkdir -p research_outputs/fluid_round9
+          python research/fluid_round9/run.py 2>&1 | tee research_outputs/fluid_round9/run.log
+
+      - name: Commit evidence to isolated branch
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research_outputs/fluid_round9
+          if ! git diff --cached --quiet; then
+            git commit -m 'research(temp): record round9 fluid validation evidence'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-coupled-round9-results
+          path: research_outputs/fluid_round9
+          if-no-files-found: warn
+          retention-days: 14
