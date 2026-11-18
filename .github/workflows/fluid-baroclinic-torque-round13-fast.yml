@@ -47,6 +47,20 @@ jobs:
                   raise SystemExit(f'patch expression not found: {old}')
               text = text.replace(old, new)
           path.write_text(text)
+
+          fast = Path('research/fluid_round13/run_baroclinic_torque_fast.py')
+          fast_text = fast.read_text()
+          fast_replacements = {
+              '    dev = r.issue_subset(panel.loc[panel["time"].dt.year <= 2022].copy(), horizon)\n    symbols = list(r.SYMBOLS)':
+                  '    dev = r.issue_subset(panel.loc[panel["time"].dt.year <= 2022].copy(), horizon)\n    dev = dev.loc[np.isfinite(pd.to_numeric(dev[target], errors="coerce"))].copy()\n    symbols = list(r.SYMBOLS)',
+              '        signed_min_year = sign * float(min_year[factor]) if np.isfinite(min_year[factor]) else float("nan")':
+                  '        raw_year_payload = json.loads(year_json[factor])\n        signed_years = {key: sign * float(value) for key, value in raw_year_payload.items()}\n        signed_min_year = min(signed_years.values()) if signed_years else float("nan")',
+          }
+          for old, new in fast_replacements.items():
+              if old not in fast_text:
+                  raise SystemExit(f'fast patch expression not found: {old}')
+              fast_text = fast_text.replace(old, new)
+          fast.write_text(fast_text)
           PY
           python research/fluid_round13/run_baroclinic_torque_fast.py 2>&1 | tee research_outputs/fluid_baroclinic_torque_round13_fast/run.log
       - name: Commit evidence
