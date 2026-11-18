@@ -1,0 +1,71 @@
+name: fluid-reattachment-risk-targeted
+
+on:
+  push:
+    branches:
+      - research-fluid-reattachment-risk-targeted-20261118
+    paths:
+      - .github/workflows/fluid-reattachment-risk-targeted.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-fluid-reattachment-risk-targeted-20261118
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn requests
+      - name: Build risk-targeted experiment from frozen reservoir protocol
+        run: |
+          mkdir -p research/fluid_reattachment_risk_targeted research_outputs/fluid_reattachment_risk_targeted
+          cp research/fluid_reattachment_reservoir/run.py research/fluid_reattachment_risk_targeted/run.py
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('research/fluid_reattachment_risk_targeted/run.py')
+          s = p.read_text()
+          s = s.replace('research_outputs/fluid_reattachment_reservoir', 'research_outputs/fluid_reattachment_risk_targeted')
+          s = s.replace('CADENCES = [1, 2, 3, 5]\n', 'CADENCES = [1, 2, 3, 5, 7]\nDAILY_RISK = None\n')
+          needle = '    issue = issue.div(issue.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)\n'
+          insert = needle + '''    global DAILY_RISK\n    if DAILY_RISK is not None:\n        risk = DAILY_RISK.reindex(index=issue.index, columns=issue.columns).clip(lower=1.0e-4)\n        issue = issue.div(risk)\n        issue = issue.div(issue.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)\n'''
+          if needle not in s:
+              raise SystemExit('portfolio insertion point not found')
+          s = s.replace(needle, insert, 1)
+          needle2 = '    hour0 = (idx.hour == 0) & (idx.minute == 0)\n'
+          insert2 = needle2 + '''    global DAILY_RISK\n    DAILY_RISK = (scale * math.sqrt(24)).loc[hour0]\n'''
+          if needle2 not in s:
+              raise SystemExit('risk insertion point not found')
+          s = s.replace(needle2, insert2, 1)
+          s = s.replace('event-reset network-boundary reattachment reservoir sampled once daily', 'event-reset network-boundary reattachment reservoir with inverse-volatility risk allocation')
+          s = s.replace('cadence chosen by worst preperiod 5bp Sharpe', 'inverse-volatility allocation; cadence chosen by worst preperiod 5bp Sharpe')
+          p.write_text(s)
+          PY
+          python -m py_compile research/fluid_reattachment_risk_targeted/run.py
+      - name: Run risk-targeted reservoir research
+        env:
+          PYTHONHASHSEED: '0'
+        run: python research/fluid_reattachment_risk_targeted/run.py | tee research_outputs/fluid_reattachment_risk_targeted/run.log
+      - name: Commit code and compact evidence
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/fluid_reattachment_risk_targeted research_outputs/fluid_reattachment_risk_targeted
+          git commit -m "research(results): risk-targeted reattachment reservoir [skip ci]" || exit 0
+          git push origin HEAD:research-fluid-reattachment-risk-targeted-20261118
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-reattachment-risk-targeted-evidence
+          path: research_outputs/fluid_reattachment_risk_targeted
+          if-no-files-found: warn
+          retention-days: 14
