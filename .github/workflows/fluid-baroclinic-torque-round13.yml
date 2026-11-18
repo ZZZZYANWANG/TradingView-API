@@ -36,11 +36,17 @@ jobs:
           from pathlib import Path
           path = Path('research/fluid_round13/run_baroclinic_torque.py')
           text = path.read_text()
-          old = 'hours = (frame["time"].astype("int64") // 3_600_000_000_000).astype("int64")'
-          new = 'hours = ((frame["time"] - pd.Timestamp("1970-01-01", tz="UTC")) // pd.Timedelta(hours=1)).astype("int64")'
-          if old not in text:
-              raise SystemExit('clock expression not found')
-          path.write_text(text.replace(old, new))
+          replacements = {
+              'hours = (frame["time"].astype("int64") // 3_600_000_000_000).astype("int64")':
+                  'hours = ((frame["time"] - pd.Timestamp("1970-01-01", tz="UTC")) // pd.Timedelta(hours=1)).astype("int64")',
+              'flat = pd.DataFrame(values, index=times, columns=SYMBOLS).stack(dropna=False)':
+                  'flat = pd.Series(values.reshape(-1), index=index)',
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'patch expression not found: {old}')
+              text = text.replace(old, new)
+          path.write_text(text)
           PY
           python research/fluid_round13/run_baroclinic_torque.py 2>&1 | tee research_outputs/fluid_baroclinic_torque_round13/run.log
       - name: Commit evidence
