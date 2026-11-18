@@ -107,7 +107,7 @@ def daily_portfolio(
         issue = issue.div(issue.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)
     issue_mask = np.zeros(len(issue), dtype=bool)
     issue_mask[::cadence] = True
-    issue = issue.where(issue_mask[:, None], 0.0)
+    issue.loc[~issue_mask, :] = 0.0
     issue_count = pd.Series(issue_mask.astype(float), index=issue.index)
     active_count = issue_count.rolling(hold_days, min_periods=1).sum().replace(0, np.nan)
     sleeve = issue.rolling(hold_days, min_periods=1).sum().div(active_count, axis=0).fillna(0.0)
