@@ -1,0 +1,2 @@
+factor,horizon,cs_ic,positive_share,bootstrap_low,bootstrap_high,ridge_gain,residual_cs_ic,max_baseline_corr,max_corr_feature,net_sharpe_10bp,annual_log_return_10bp,avg_turnover,years
+flux_source_release_ewm5,5,0.0029229578010065834,0.3902439024390244,-0.05595304086157745,0.04216731777707386,-0.00037673114487781097,0.014159011719987333,0.24836534422151182,mom20_gap,-2.240127885526095,-0.0981068620283472,1.0522302645366175,"{""2026"": -0.07980915363417133}"
