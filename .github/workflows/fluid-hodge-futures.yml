@@ -22,6 +22,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install numpy pandas scipy scikit-learn yfinance pyarrow
+      - name: Apply runner compatibility patch
+        run: |
+          sed -i 's/to_numpy(dtype=float)/to_numpy(dtype=float, copy=True)/g' research/fluid_hodge_futures/run.py
       - name: Compile research program
         run: python -m py_compile research/fluid_hodge_futures/run.py
       - name: Run fluid Hodge futures research
@@ -30,6 +33,7 @@ jobs:
           OUT_DIR: research_outputs/fluid_hodge_futures
         run: |
           mkdir -p research_outputs/fluid_hodge_futures
+          set -o pipefail
           python research/fluid_hodge_futures/run.py | tee research_outputs/fluid_hodge_futures/run.log
       - name: Archive result directory
         if: always()
