@@ -1,0 +1,26 @@
+binance=160/1120 spot=160 perp=0
+binance=320/1120 spot=320 perp=0
+binance=480/1120 spot=480 perp=0
+binance=640/1120 spot=560 perp=80
+binance=800/1120 spot=560 perp=240
+binance=960/1120 spot=560 perp=400
+binance=1120/1120 spot=560 perp=560
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 912, in <module>
+    main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 878, in main
+    stocks_raw, stocks_metadata = load_stocks()
+                                  ^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 378, in load_stocks
+    raise RuntimeError(f"only {len(frames)} usable stock histories")
+RuntimeError: only 0 usable stock histories
+
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 912, in <module>
+    main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 878, in main
+    stocks_raw, stocks_metadata = load_stocks()
+                                  ^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_round9/run.py", line 378, in load_stocks
+    raise RuntimeError(f"only {len(frames)} usable stock histories")
+RuntimeError: only 0 usable stock histories
