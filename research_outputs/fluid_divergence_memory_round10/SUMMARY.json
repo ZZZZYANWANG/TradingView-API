@@ -1,0 +1,39 @@
+{
+  "completed_utc": "2026-11-18 05:21:37.297749+00:00",
+  "mechanism": "low-turnover storage and hysteresis of graph-divergence absorption",
+  "candidate_count": 12,
+  "selected_factor": "divergence_persistence10",
+  "selected_horizon": 20,
+  "selected_sign": 1,
+  "validation": {
+    "factor": "divergence_persistence10",
+    "horizon": 20,
+    "sign": 1,
+    "cs_ic": 0.005362505362505363,
+    "positive_share": 0.4594594594594595,
+    "n_times": 37,
+    "bootstrap_low": -0.027275749775749782,
+    "bootstrap_high": 0.0361668324168324,
+    "p_nonpositive": 0.39,
+    "ridge_gain": -0.0003566051535879023,
+    "residual_cs_ic": -0.021734721734721737,
+    "max_baseline_corr": 0.7602050710157877,
+    "max_corr_feature": "divergence_absorption_ewm5",
+    "net_sharpe_10bp": -0.05376615800574248,
+    "annual_log_return_10bp": -0.0022625019259579814,
+    "avg_turnover": 1.2417248709383544,
+    "years": "{\"2021\": 0.019584449359576074, \"2022\": -0.017491306112988145, \"2023\": -0.008736998108528026}"
+  },
+  "validation_gate": false,
+  "confirmation": null,
+  "shadow": null,
+  "final_pass": false,
+  "governance": {
+    "development": "2014-2020",
+    "validation": "2021-2023",
+    "confirmation": "2024-2025 sealed until gate",
+    "shadow": "2026",
+    "baseline_contains_raw_divergence_absorption": true,
+    "fixed_universe_warning": true
+  }
+}
