@@ -1,0 +1,679 @@
+[
+  {
+    "code": "sh.600015",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600019",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600010",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600016",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600018",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600009",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-31"
+  },
+  {
+    "code": "sh.600000",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600029",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600030",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-28"
+  },
+  {
+    "code": "sh.600050",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.600036",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.600031",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.600085",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600048",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600061",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600028",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600104",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600115",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600196",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600111",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600309",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.600276",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.600362",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600406",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600660",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600588",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600570",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600519",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600585",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600795",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600690",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-22"
+  },
+  {
+    "code": "sh.600886",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.600900",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.600741",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600893",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-24"
+  },
+  {
+    "code": "sh.600887",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.600547",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.600999",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-02-07"
+  },
+  {
+    "code": "sh.600958",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6596,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601009",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601169",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.601006",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601088",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601186",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.601021",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601166",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.601211",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.601225",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.601328",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601288",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601377",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.601336",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.601318",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 4000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2024-02-20"
+  },
+  {
+    "code": "sh.601390",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601618",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601398",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601601",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601111",
+    "ok": false,
+    "error": "网络接收错误。"
+  },
+  {
+    "code": "sh.601633",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601600",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601669",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.601766",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sh.601668",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 6660,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-11-17"
+  },
+  {
+    "code": "sh.601800",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.601628",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.601818",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.601899",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601901",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601939",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601688",
+    "ok": true,
+    "daily_rows": 2000,
+    "hourly_rows": 6000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2026-03-16"
+  },
+  {
+    "code": "sh.601985",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601877",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sh.601857",
+    "ok": true,
+    "daily_rows": 2396,
+    "hourly_rows": 2000,
+    "hourly_min": "2020-01-02",
+    "hourly_max": "2022-01-21"
+  },
+  {
+    "code": "sz.000002",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601998",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.603993",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000063",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000166",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601888",
+    "ok": false,
+    "error": "empty_daily_or_hourly"
+  },
+  {
+    "code": "sz.000157",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000338",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000425",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601919",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000333",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000625",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000538",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000768",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000776",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000568",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000895",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000858",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000651",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000725",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000100",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000938",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.001979",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000963",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601988",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sz.000001",
+    "ok": false,
+    "error": "黑名单用户，请与管理员联系"
+  },
+  {
+    "code": "sh.601788",
+    "ok": false,
+    "error": "网络接收错误。"
+  }
+]
