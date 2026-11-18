@@ -1,0 +1,52 @@
+download=100/1820 usable=100
+download=200/1820 usable=200
+download=300/1820 usable=300
+download=400/1820 usable=400
+download=500/1820 usable=500
+download=600/1820 usable=600
+download=700/1820 usable=700
+download=800/1820 usable=800
+download=900/1820 usable=900
+download=1000/1820 usable=1000
+download=1100/1820 usable=1100
+download=1200/1820 usable=1200
+download=1300/1820 usable=1300
+download=1400/1820 usable=1383
+download=1500/1820 usable=1483
+download=1600/1820 usable=1583
+download=1700/1820 usable=1683
+download=1800/1820 usable=1783
+{
+  "pool_a": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "ADAUSDT",
+    "DOGEUSDT",
+    "LTCUSDT",
+    "BCHUSDT",
+    "LINKUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "DOTUSDT",
+    "SOLUSDT"
+  ],
+  "pool_b": [
+    "AAVEUSDT",
+    "ALGOUSDT",
+    "ATOMUSDT",
+    "AVAXUSDT",
+    "COMPUSDT",
+    "FILUSDT",
+    "NEARUSDT",
+    "SUSHIUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "XTZUSDT",
+    "ZECUSDT"
+  ],
+  "validation_pass": [],
+  "admitted_count": 0,
+  "admitted": []
+}
