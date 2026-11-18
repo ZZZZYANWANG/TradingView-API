@@ -1,0 +1,183 @@
+kline_parts=150/897 usable=150
+kline_parts=300/897 usable=300
+kline_parts=450/897 usable=450
+kline_parts=600/897 usable=600
+kline_parts=750/897 usable=750
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+external_loaded=BTCUSDT metrics=53954 funding=7395
+external_loaded=ETHUSDT metrics=43022 funding=7395
+external_loaded=BNBUSDT metrics=43022 funding=7274
+external_loaded=XRPUSDT metrics=43022 funding=7379
+external_loaded=ADAUSDT metrics=43022 funding=7339
+external_loaded=DOGEUSDT metrics=43022 funding=6821
+external_loaded=LTCUSDT metrics=43022 funding=7370
+external_loaded=BCHUSDT metrics=43022 funding=7395
+external_loaded=LINKUSDT metrics=43022 funding=7346
+external_loaded=ETCUSDT metrics=43022 funding=7349
+external_loaded=XLMUSDT metrics=42998 funding=7339
+external_loaded=DOTUSDT metrics=43022 funding=6698
+external_loaded=SOLUSDT metrics=43022 funding=6700
+local_features=ADAUSDT rows=50376
+local_features=BCHUSDT rows=50376
+local_features=BNBUSDT rows=50376
+local_features=BTCUSDT rows=50376
+local_features=DOGEUSDT rows=50376
+local_features=DOTUSDT rows=50376
+local_features=ETCUSDT rows=50376
+local_features=ETHUSDT rows=50376
+local_features=LINKUSDT rows=50376
+local_features=LTCUSDT rows=50256
+local_features=SOLUSDT rows=50256
+local_features=XLMUSDT rows=50256
+local_features=XRPUSDT rows=50256
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_torque.py:544: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g[f"{name}_ewm{span}"] = state.ewm(
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:251: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[name] = signed_median(panel, members)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:282: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[composite] = signed_median(panel, member_names)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:282: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[composite] = signed_median(panel, member_names)
+/home/runner/work/TradingView-API/TradingView-API/research/fluid_round13/run_baroclinic_ensemble.py:282: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  panel[composite] = signed_median(panel, member_names)
+validation=ensemble_baroclinic_reattachment_h480 horizon=480
+validation=ensemble_baroclinic_torque_h480 horizon=480
+validation=ensemble_ekman_impedance_h480 horizon=480
+validation=ensemble_kelvin_circulation_h240 horizon=240
+validation=ensemble_potential_vorticity_h72 horizon=72
+validation=ensemble_source_coupling_h120 horizon=120
+validation=ensemble_vortex_stretching_h120 horizon=120
+validation=ensemble_circulation_reattachment horizon=240
+validation=ensemble_cross_family_top4 horizon=480
+validation=ensemble_torque_pv_source horizon=480
+{
+  "composite_ensembles": 3,
+  "decision": "promote_only_if_PROMOTED_nonempty_and_sequential_gain_positive_when_multiple",
+  "family_ensembles": 7,
+  "holdout_opened": 0,
+  "primitive_scan_rows": 700,
+  "promoted": [],
+  "strong_parent_policy": "training-median imputation plus training standardization",
+  "validation_candidates": 10,
+  "validation_gate_passed": 0
+}

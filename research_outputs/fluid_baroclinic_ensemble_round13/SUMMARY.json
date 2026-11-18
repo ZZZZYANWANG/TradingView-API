@@ -1,0 +1,11 @@
+{
+  "composite_ensembles": 3,
+  "decision": "promote_only_if_PROMOTED_nonempty_and_sequential_gain_positive_when_multiple",
+  "family_ensembles": 7,
+  "holdout_opened": 0,
+  "primitive_scan_rows": 700,
+  "promoted": [],
+  "strong_parent_policy": "training-median imputation plus training standardization",
+  "validation_candidates": 10,
+  "validation_gate_passed": 0
+}
