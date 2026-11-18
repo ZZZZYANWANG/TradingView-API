@@ -1,0 +1,82 @@
+login success!
+snapshot 2017-01-15 members=300
+snapshot 2017-04-15 members=300
+snapshot 2017-07-15 members=300
+snapshot 2017-10-15 members=300
+snapshot 2018-01-15 members=300
+snapshot 2018-04-15 members=300
+snapshot 2018-07-15 members=300
+snapshot 2018-10-15 members=300
+snapshot 2019-01-15 members=300
+snapshot 2019-04-15 members=300
+snapshot 2019-07-15 members=300
+snapshot 2019-10-15 members=300
+snapshot 2020-01-15 members=300
+snapshot 2020-04-15 members=300
+snapshot 2020-07-15 members=300
+snapshot 2020-10-15 members=300
+snapshot 2021-01-15 members=300
+snapshot 2021-04-15 members=300
+snapshot 2021-07-15 members=300
+snapshot 2021-10-15 members=300
+snapshot 2022-01-15 members=300
+snapshot 2022-04-15 members=300
+snapshot 2022-07-15 members=300
+snapshot 2022-10-15 members=300
+snapshot 2023-01-15 members=300
+snapshot 2023-04-15 members=300
+snapshot 2023-07-15 members=300
+snapshot 2023-10-15 members=300
+snapshot 2024-01-15 members=300
+snapshot 2024-04-15 members=300
+snapshot 2024-07-15 members=300
+snapshot 2024-10-15 members=300
+snapshot 2025-01-15 members=300
+snapshot 2025-04-15 members=300
+snapshot 2025-07-15 members=300
+snapshot 2025-10-15 members=300
+snapshot 2026-01-15 members=300
+snapshot 2026-04-15 members=300
+snapshot 2026-07-15 members=300
+snapshot 2026-10-15 members=300
+logout success!
+login success!
+intraday batch progress=5/40 usable=5
+login success!
+intraday batch progress=5/40 usable=5
+intraday batch progress=10/40 usable=10
+intraday batch progress=10/40 usable=10
+intraday batch progress=15/40 usable=15
+intraday batch progress=15/40 usable=15
+intraday batch progress=20/40 usable=20
+intraday batch progress=20/40 usable=20
+intraday batch progress=25/40 usable=25
+intraday batch progress=25/40 usable=25
+intraday batch progress=30/40 usable=30
+intraday batch progress=30/40 usable=30
+intraday batch progress=35/40 usable=35
+intraday batch progress=35/40 usable=35
+intraday batch progress=40/40 usable=40
+daily failed sh.601985: 用户未登录
+hourly failed sh.601985: 用户未登录
+daily failed sh.601998: 用户未登录
+hourly failed sh.601998: 用户未登录
+daily failed sz.000001: 用户未登录
+hourly failed sz.000001: 用户未登录
+intraday batch progress=40/40 usable=37
+logout success!
+logout failed!
+login success!
+downloaded 20/80 daily=20 hourly=20
+downloaded 40/80 daily=40 hourly=40
+downloaded 60/80 daily=60 hourly=60
+downloaded 80/80 daily=77 hourly=77
+logout success!
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_intraday_v3.py", line 141, in <module>
+    main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_intraday_v3.py", line 116, in main
+    graph.main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_research.py", line 526, in main
+    raise RuntimeError(f"insufficient hourly coverage: {len(hourly_parts)} codes")
+RuntimeError: insufficient hourly coverage: 77 codes
