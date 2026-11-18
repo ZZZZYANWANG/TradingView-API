@@ -34,6 +34,7 @@ jobs:
           s = p.read_text()
           s = s.replace('research_outputs/fluid_reattachment_reservoir', 'research_outputs/fluid_reattachment_risk_targeted')
           s = s.replace('CADENCES = [1, 2, 3, 5]\n', 'CADENCES = [1, 2, 3, 5, 7]\nDAILY_RISK = None\n')
+          s = s.replace('issue = issue.where(issue_mask[:, None], 0.0)', 'issue.loc[~issue_mask, :] = 0.0')
           needle = '    issue = issue.div(issue.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)\n'
           insert = needle + '''    global DAILY_RISK\n    if DAILY_RISK is not None:\n        risk = DAILY_RISK.reindex(index=issue.index, columns=issue.columns).clip(lower=1.0e-4)\n        issue = issue.div(risk)\n        issue = issue.div(issue.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)\n'''
           if needle not in s:
@@ -52,7 +53,9 @@ jobs:
       - name: Run risk-targeted reservoir research
         env:
           PYTHONHASHSEED: '0'
-        run: python research/fluid_reattachment_risk_targeted/run.py | tee research_outputs/fluid_reattachment_risk_targeted/run.log
+        run: |
+          set -o pipefail
+          python research/fluid_reattachment_risk_targeted/run.py | tee research_outputs/fluid_reattachment_risk_targeted/run.log
       - name: Commit code and compact evidence
         if: success()
         run: |
