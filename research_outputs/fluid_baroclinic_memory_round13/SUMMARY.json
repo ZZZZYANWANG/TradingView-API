@@ -1,0 +1,11 @@
+{
+  "candidate_columns": 88,
+  "candidate_families": 7,
+  "decision": "promote_only_if_PROMOTED_nonempty",
+  "final_holdout": "2025-2026-09",
+  "holdout_winners": 7,
+  "promoted": [],
+  "selection_period": "2021-2024",
+  "selection_tests": 616,
+  "strong_parent_count": 51
+}
