@@ -14,7 +14,7 @@ SCRIPT = Path("research/ashare_fluid_round10/run.py")
 START_DATE = "2018-01-01"
 END_DATE = "2026-11-15"
 MAX_CODES = 180
-WORKERS = 10
+WORKERS = 6
 
 
 def load_module():
@@ -35,22 +35,42 @@ def rows(result: Any) -> pd.DataFrame:
     return pd.DataFrame(values, columns=result.fields)
 
 
+def login_with_retry(label: str, attempts: int = 12):
+    error = ""
+    for attempt in range(attempts):
+        try:
+            login = bs.login()
+            if login.error_code == "0":
+                return login
+            error = login.error_msg
+        except Exception as exc:  # noqa: BLE001
+            error = f"{type(exc).__name__}:{exc}"
+        try:
+            bs.logout()
+        except Exception:
+            pass
+        delay = min(30.0, 2.0 + attempt * 2.0)
+        print(f"{label} login retry={attempt + 1}/{attempts} error={error!r} sleep={delay}", flush=True)
+        time.sleep(delay)
+    raise RuntimeError(f"{label} login failed after {attempts} attempts: {error}")
+
+
 def query_snapshot(stamp: pd.Timestamp) -> list[str]:
     for lag in range(8):
         date = (stamp - pd.Timedelta(days=lag)).strftime("%Y-%m-%d")
-        try:
-            frame = rows(bs.query_hs300_stocks(date=date))
-            if len(frame) >= 150 and "code" in frame:
-                return sorted(frame["code"].astype(str).unique())
-        except Exception:
-            continue
+        for attempt in range(4):
+            try:
+                frame = rows(bs.query_hs300_stocks(date=date))
+                if len(frame) >= 150 and "code" in frame:
+                    return sorted(frame["code"].astype(str).unique())
+            except Exception as exc:  # noqa: BLE001
+                print(f"snapshot query retry stamp={stamp.date()} lag={lag} attempt={attempt + 1}: {exc}", flush=True)
+            time.sleep(1.0 + attempt)
     return []
 
 
 def membership_snapshots() -> tuple[dict[pd.Timestamp, set[str]], dict[str, Any]]:
-    login = bs.login()
-    if login.error_code != "0":
-        raise RuntimeError(login.error_msg)
+    login_with_retry("membership")
     try:
         snapshots: dict[pd.Timestamp, set[str]] = {}
         for year in range(2018, 2027):
@@ -60,13 +80,18 @@ def membership_snapshots() -> tuple[dict[pd.Timestamp, set[str]], dict[str, Any]
                 if codes:
                     snapshots[stamp] = set(codes)
                     print(f"snapshot {stamp.date()} members={len(codes)}", flush=True)
+                else:
+                    print(f"snapshot unavailable {stamp.date()}", flush=True)
         current = rows(bs.query_hs300_stocks())
         if len(current) >= 150:
             snapshots[pd.Timestamp(END_DATE)] = set(current["code"].astype(str))
     finally:
-        bs.logout()
-    if not snapshots:
-        raise RuntimeError("no CSI300 membership snapshots")
+        try:
+            bs.logout()
+        except Exception:
+            pass
+    if len(snapshots) < 24:
+        raise RuntimeError(f"insufficient CSI300 membership snapshots: {len(snapshots)}")
     counts = Counter(code for members in snapshots.values() for code in members)
     selected = [code for code, _ in sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:MAX_CODES]]
     selected_set = set(selected)
@@ -84,13 +109,14 @@ def membership_snapshots() -> tuple[dict[pd.Timestamp, set[str]], dict[str, Any]
 
 
 def download_one(code: str) -> tuple[str, pd.DataFrame | None, str | None]:
-    login = bs.login()
-    if login.error_code != "0":
-        return code, None, login.error_msg
+    try:
+        login_with_retry(f"download:{code}", attempts=8)
+    except Exception as exc:  # noqa: BLE001
+        return code, None, str(exc)
     fields = "date,code,open,high,low,close,preclose,volume,amount,turn,pctChg,tradestatus,isST"
     error = ""
     try:
-        for attempt in range(3):
+        for attempt in range(6):
             try:
                 result = bs.query_history_k_data_plus(
                     code,
@@ -111,9 +137,12 @@ def download_one(code: str) -> tuple[str, pd.DataFrame | None, str | None]:
                 error = result.error_msg
             except Exception as exc:  # noqa: BLE001
                 error = f"{type(exc).__name__}:{exc}"
-            time.sleep(0.5 * (attempt + 1))
+            time.sleep(1.0 + attempt * 1.5)
     finally:
-        bs.logout()
+        try:
+            bs.logout()
+        except Exception:
+            pass
     return code, None, error or "empty"
 
 
@@ -157,7 +186,7 @@ def load_baostock() -> tuple[pd.DataFrame, dict[str, Any]]:
             if index % 20 == 0:
                 print(f"daily downloads={index}/{len(selected)} usable={len(frames)}", flush=True)
     if len(frames) < 100:
-        raise RuntimeError(f"insufficient downloaded histories: {len(frames)}")
+        raise RuntimeError(f"insufficient downloaded histories: {len(frames)}; first errors={errors[:5]}")
     panel = pd.concat(frames, ignore_index=True).drop_duplicates(["code", "date"], keep="last")
     panel = panel.loc[
         panel["tradestatus"].eq(1)
