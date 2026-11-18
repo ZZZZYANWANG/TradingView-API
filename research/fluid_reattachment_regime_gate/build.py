@@ -5,7 +5,7 @@ target = Path("research/fluid_reattachment_regime_gate/run.py")
 target.parent.mkdir(parents=True, exist_ok=True)
 s = source.read_text()
 s = s.replace(
-    "research_outputs/fluid_reattachment_reservoir",
+    "research_outputs/fluid_reattachment_frozen_daily",
     "research_outputs/fluid_reattachment_regime_gate",
 )
 s = s.replace(
