@@ -1,0 +1,301 @@
+binance=160/1120 spot=160 perp=0
+binance=320/1120 spot=320 perp=0
+binance=480/1120 spot=480 perp=0
+binance=640/1120 spot=560 perp=80
+binance=800/1120 spot=560 perp=240
+binance=960/1120 spot=560 perp=400
+binance=1120/1120 spot=560 perp=560
+{
+  "completed_utc": "2026-11-18 05:31:29.331304+00:00",
+  "data": {
+    "requested_symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "BNBUSDT",
+      "XRPUSDT",
+      "ADAUSDT",
+      "DOGEUSDT",
+      "LINKUSDT",
+      "SOLUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "SOLUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 408608,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 408848,
+    "perp_rows": 408720,
+    "errors": []
+  },
+  "mechanism": "cross-asset graph Hodge decomposition of spot-perpetual shear/activity edge flow",
+  "selected_factor": null,
+  "selected_horizon": null,
+  "selected_sign": null,
+  "confirmation": null,
+  "shadow": null,
+  "final_pass": false,
+  "governance": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "confirmation": "2025",
+    "shadow": "2026",
+    "confirmation_sealed_until_validation": true
+  }
+}
+binance=160/1820 spot=160 perp=0
+binance=320/1820 spot=320 perp=0
+binance=480/1820 spot=480 perp=0
+binance=640/1820 spot=640 perp=0
+binance=800/1820 spot=800 perp=0
+binance=960/1820 spot=910 perp=50
+binance=1120/1820 spot=910 perp=210
+binance=1280/1820 spot=910 perp=370
+binance=1440/1820 spot=910 perp=530
+binance=1600/1820 spot=910 perp=690
+binance=1760/1820 spot=910 perp=850
+{
+  "completed_utc": "2026-11-18 05:33:04.616561+00:00",
+  "data": {
+    "requested_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 663898,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 664378,
+    "perp_rows": 664080,
+    "errors": []
+  },
+  "requested_symbols": [
+    "ADAUSDT",
+    "BCHUSDT",
+    "BNBUSDT",
+    "BTCUSDT",
+    "DOGEUSDT",
+    "DOTUSDT",
+    "ETCUSDT",
+    "ETHUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "SOLUSDT",
+    "XLMUSDT",
+    "XRPUSDT"
+  ],
+  "mechanism": "expanded-universe cross-asset graph Hodge pressure/circulation states",
+  "candidate_count": 18,
+  "selected_factor": "cross_shear_absorption_ewm72",
+  "selected_horizon": 120,
+  "selected_sign": -1,
+  "validation": {
+    "factor": "cross_shear_absorption_ewm72",
+    "horizon": 120,
+    "sign": -1,
+    "cs_ic": -0.06273520999548397,
+    "positive_share": 0.4315068493150685,
+    "n_times": 146,
+    "bootstrap_low": -0.1255118169501731,
+    "bootstrap_high": -0.016066724371518886,
+    "p_nonpositive": 0.9975,
+    "ridge_gain": -0.0010425386301587424,
+    "residual_cs_ic": -0.05603642932410055,
+    "ts_ic_diagnostic": -0.041701587433418195,
+    "ts_positive_share": 0.3076923076923077,
+    "max_baseline_corr": 0.03193978574271817,
+    "max_corr_feature": "basis_velocity_z",
+    "net_sharpe_2bp": -1.4828289288756291,
+    "annual_log_return_2bp": -0.27877063661805207,
+    "avg_turnover": 1.3785453425741983,
+    "years": "{\"2023\": -0.16451021018532808, \"2024\": -0.393031063050776}"
+  },
+  "validation_gate": false,
+  "confirmation": null,
+  "shadow": null,
+  "final_pass": false,
+  "governance": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "confirmation": "2025 sealed until gate",
+    "shadow": "2026",
+    "one_global_candidate_selected_before_validation": true
+  }
+}
+binance=160/1820 spot=160 perp=0
+binance=320/1820 spot=320 perp=0
+binance=480/1820 spot=480 perp=0
+binance=640/1820 spot=640 perp=0
+binance=800/1820 spot=800 perp=0
+binance=960/1820 spot=910 perp=50
+binance=1120/1820 spot=910 perp=210
+binance=1280/1820 spot=910 perp=370
+binance=1440/1820 spot=910 perp=530
+binance=1600/1820 spot=910 perp=690
+binance=1760/1820 spot=910 perp=850
+{
+  "completed_utc": "2026-11-18 05:33:47.008904+00:00",
+  "data": {
+    "requested_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 663898,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 664378,
+    "perp_rows": 664080,
+    "errors": []
+  },
+  "requested_symbols": [
+    "ADAUSDT",
+    "BCHUSDT",
+    "BNBUSDT",
+    "BTCUSDT",
+    "DOGEUSDT",
+    "DOTUSDT",
+    "ETCUSDT",
+    "ETHUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "SOLUSDT",
+    "XLMUSDT",
+    "XRPUSDT"
+  ],
+  "factor": "cross_cycle_unwind_ewm12",
+  "formula": "EWM12{Z_prior720[-sign(perpetual_momentum_24h) * (graph_cycle_share_t - graph_cycle_share_t-24h)]}",
+  "horizon_hours": 120,
+  "sign": 1,
+  "frozen_from": "8-pair 2023-2024 graph-Hodge validation; no formula or horizon search in this run",
+  "prior_replication": {
+    "period": "2023-2024",
+    "factor": "cross_cycle_unwind_ewm12",
+    "horizon": 120,
+    "sign": 1,
+    "cs_ic": 0.04278940237844347,
+    "positive_share": 0.5547945205479452,
+    "n_times": 146,
+    "bootstrap_low": 0.0013820939334637998,
+    "bootstrap_high": 0.08286165888905613,
+    "p_nonpositive": 0.0225,
+    "ridge_gain": 0.0003036291626182492,
+    "residual_cs_ic": 0.04798283907872948,
+    "ts_ic_diagnostic": 0.02634262963569934,
+    "ts_positive_share": 0.7692307692307693,
+    "max_baseline_corr": 0.050146912429455265,
+    "max_corr_feature": "s_rv_z",
+    "net_sharpe_2bp": 0.4361701866424813,
+    "annual_log_return_2bp": 0.07889133671552592,
+    "avg_turnover": 1.3815242888835852,
+    "years": "{\"2023\": 0.29804301446385917, \"2024\": -0.14026034103280735}"
+  },
+  "confirmation_2025": {
+    "period": "2025-2025",
+    "factor": "cross_cycle_unwind_ewm12",
+    "horizon": 120,
+    "sign": 1,
+    "cs_ic": 0.011515881378895082,
+    "positive_share": 0.547945205479452,
+    "n_times": 73,
+    "bootstrap_low": -0.03786880927291886,
+    "bootstrap_high": 0.030868959807315962,
+    "p_nonpositive": 0.5525,
+    "ridge_gain": 0.0003783960166761304,
+    "residual_cs_ic": 0.01565557729941292,
+    "ts_ic_diagnostic": 0.014090222994332586,
+    "ts_positive_share": 0.5384615384615384,
+    "max_baseline_corr": 0.0545668114477949,
+    "max_corr_feature": "p_qz",
+    "net_sharpe_2bp": -0.4199164076303276,
+    "annual_log_return_2bp": -0.05408770406819724,
+    "avg_turnover": 1.367639705425123,
+    "years": "{\"2025\": -0.05408770406819724}"
+  },
+  "shadow_2026": {
+    "period": "2026-2026",
+    "factor": "cross_cycle_unwind_ewm12",
+    "horizon": 120,
+    "sign": 1,
+    "cs_ic": 0.044047619047619044,
+    "positive_share": 0.5833333333333334,
+    "n_times": 60,
+    "bootstrap_low": -0.023537087912087914,
+    "bootstrap_high": 0.122621336996337,
+    "p_nonpositive": 0.07625,
+    "ridge_gain": 0.0009375995912688725,
+    "residual_cs_ic": 0.03315018315018315,
+    "ts_ic_diagnostic": 0.03111120610425973,
+    "ts_positive_share": 0.7692307692307693,
+    "max_baseline_corr": 0.08113359847678714,
+    "max_corr_feature": "basis_z",
+    "net_sharpe_2bp": 1.6272855839673546,
+    "annual_log_return_2bp": 0.28931694843843425,
+    "avg_turnover": 1.429914764273963,
+    "years": "{\"2026\": 0.28931694843843425}"
+  },
+  "final_pass": false,
+  "governance": {
+    "2025_is_first_confirmation_after_formula_freeze": true,
+    "2026_is_shadow": true,
+    "strong_baseline_contains_graph_parent_states": true,
+    "cost_bp_one_way": 2.0
+  }
+}
