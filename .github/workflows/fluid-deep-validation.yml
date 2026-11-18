@@ -28,7 +28,7 @@ jobs:
           python -m pip install numpy pandas scipy scikit-learn requests
 
       - name: Run deep fluid validation
-        run: python research/fluid_deep_validation/run.py
+        run: python research/fluid_deep_validation/run_fixed.py
 
       - name: Upload results
         if: always()
