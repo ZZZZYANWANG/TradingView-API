@@ -1,0 +1,189 @@
+{
+  "login": {
+    "code": "0",
+    "msg": "success"
+  },
+  "snapshots": {
+    "2017-01-13": {
+      "error_code": "0",
+      "error_msg": "success",
+      "rows": 300,
+      "elapsed": 2.3436505794525146,
+      "sample": [
+        {
+          "updateDate": "2017-01-09",
+          "code": "sh.600000",
+          "code_name": "浦发银行"
+        },
+        {
+          "updateDate": "2017-01-09",
+          "code": "sh.600005",
+          "code_name": "武钢股份"
+        },
+        {
+          "updateDate": "2017-01-09",
+          "code": "sh.600008",
+          "code_name": "首创股份"
+        }
+      ]
+    },
+    "2020-01-15": {
+      "error_code": "0",
+      "error_msg": "success",
+      "rows": 300,
+      "elapsed": 1.6822044849395752,
+      "sample": [
+        {
+          "updateDate": "2020-01-13",
+          "code": "sh.600000",
+          "code_name": "浦发银行"
+        },
+        {
+          "updateDate": "2020-01-13",
+          "code": "sh.600004",
+          "code_name": "白云机场"
+        },
+        {
+          "updateDate": "2020-01-13",
+          "code": "sh.600009",
+          "code_name": "上海机场"
+        }
+      ]
+    },
+    "2023-01-13": {
+      "error_code": "0",
+      "error_msg": "success",
+      "rows": 300,
+      "elapsed": 3.6794700622558594,
+      "sample": [
+        {
+          "updateDate": "2022-08-01",
+          "code": "sh.600000",
+          "code_name": "浦发银行"
+        },
+        {
+          "updateDate": "2022-08-01",
+          "code": "sh.600009",
+          "code_name": "上海机场"
+        },
+        {
+          "updateDate": "2022-08-01",
+          "code": "sh.600010",
+          "code_name": "包钢股份"
+        }
+      ]
+    },
+    "2026-10-15": {
+      "error_code": "0",
+      "error_msg": "success",
+      "rows": 300,
+      "elapsed": 3.6998403072357178,
+      "sample": [
+        {
+          "updateDate": "2026-10-12",
+          "code": "sh.600000",
+          "code_name": "浦发银行"
+        },
+        {
+          "updateDate": "2026-10-12",
+          "code": "sh.600009",
+          "code_name": "上海机场"
+        },
+        {
+          "updateDate": "2026-10-12",
+          "code": "sh.600010",
+          "code_name": "包钢股份"
+        }
+      ]
+    }
+  },
+  "stocks": [
+    {
+      "code": "sh.600000",
+      "daily_rows": 2396,
+      "hourly_rows": 6660,
+      "daily_error": [
+        "0",
+        "success"
+      ],
+      "hourly_error": [
+        "0",
+        "success"
+      ],
+      "daily_elapsed": 11.818119287490845,
+      "hourly_elapsed": 32.69424557685852,
+      "daily_min": "2017-01-03",
+      "daily_max": "2026-11-17",
+      "hourly_min": "2020-01-02",
+      "hourly_max": "2026-11-17",
+      "hourly_times": [
+        "20200102103000000",
+        "20200102113000000",
+        "20200102140000000",
+        "20200102150000000",
+        "20200103103000000",
+        "20200103113000000",
+        "20200103140000000",
+        "20200103150000000"
+      ]
+    },
+    {
+      "code": "sh.600519",
+      "daily_rows": 2396,
+      "hourly_rows": 6660,
+      "daily_error": [
+        "0",
+        "success"
+      ],
+      "hourly_error": [
+        "0",
+        "success"
+      ],
+      "daily_elapsed": 16.906150102615356,
+      "hourly_elapsed": 54.71298360824585,
+      "daily_min": "2017-01-03",
+      "daily_max": "2026-11-17",
+      "hourly_min": "2020-01-02",
+      "hourly_max": "2026-11-17",
+      "hourly_times": [
+        "20200102103000000",
+        "20200102113000000",
+        "20200102140000000",
+        "20200102150000000",
+        "20200103103000000",
+        "20200103113000000",
+        "20200103140000000",
+        "20200103150000000"
+      ]
+    },
+    {
+      "code": "sz.000001",
+      "daily_rows": 2396,
+      "hourly_rows": 6660,
+      "daily_error": [
+        "0",
+        "success"
+      ],
+      "hourly_error": [
+        "0",
+        "success"
+      ],
+      "daily_elapsed": 18.43412733078003,
+      "hourly_elapsed": 37.45861196517944,
+      "daily_min": "2017-01-03",
+      "daily_max": "2026-11-17",
+      "hourly_min": "2020-01-02",
+      "hourly_max": "2026-11-17",
+      "hourly_times": [
+        "20200102103000000",
+        "20200102113000000",
+        "20200102140000000",
+        "20200102150000000",
+        "20200103103000000",
+        "20200103113000000",
+        "20200103140000000",
+        "20200103150000000"
+      ]
+    }
+  ]
+}
