@@ -27,13 +27,13 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install numpy pandas scipy scikit-learn requests
 
-      - name: Run deep fluid validation
-        run: python research/fluid_deep_validation/run_fixed.py
+      - name: Run closed-loop fluid composite validation
+        run: python research/fluid_deep_validation/run_composites.py
 
       - name: Upload results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fluid-deep-validation-results
-          path: research_outputs/fluid_deep_validation
+          name: fluid-closed-loop-composite-results
+          path: research_outputs/fluid_closed_loop_composites
           if-no-files-found: warn
