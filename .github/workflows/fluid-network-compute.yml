@@ -1,0 +1,41 @@
+name: fluid-network-compute
+
+on:
+  push:
+    branches:
+      - research-fluid-network-compute-20261118
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn requests
+      - name: Run research
+        env:
+          PYTHONHASHSEED: '0'
+          OMP_NUM_THREADS: '2'
+          OPENBLAS_NUM_THREADS: '2'
+          MKL_NUM_THREADS: '2'
+        run: |
+          mkdir -p research_outputs/fluid_network
+          python -m py_compile research/fluid_network/run.py
+          python research/fluid_network/run.py | tee research_outputs/fluid_network/run.log
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-network-compute-evidence
+          path: research_outputs/fluid_network
+          if-no-files-found: warn
+          retention-days: 7
