@@ -27,10 +27,19 @@ jobs:
           OPENBLAS_NUM_THREADS: '2'
           MKL_NUM_THREADS: '2'
         run: |
+          set -o pipefail
           mkdir -p research_outputs/fluid_network
           sed -i 's/corr=dv.corr().fillna(0).to_numpy();/corr=dv.corr().fillna(0).to_numpy(copy=True);/' research/fluid_network/run.py
+          sed -i 's/B=reg.coef_;/B=reg.coef_.copy();/' research/fluid_network/run.py
+          sed -i 's/stack(dropna=False)/stack()/g' research/fluid_network/run.py
           python -m py_compile research/fluid_network/run.py
           python research/fluid_network/run.py | tee research_outputs/fluid_network/run.log
+          echo '===== SUMMARY ====='
+          cat research_outputs/fluid_network/summary.json
+          echo '===== VALIDATION ====='
+          cat research_outputs/fluid_network/validation.csv
+          echo '===== HOLDOUT ====='
+          cat research_outputs/fluid_network/holdout.csv
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
