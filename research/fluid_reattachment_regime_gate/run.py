@@ -16,7 +16,7 @@ base = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(base)
 
-OUT = Path("research_outputs/fluid_reattachment_frozen_daily")
+OUT = Path("research_outputs/fluid_reattachment_regime_gate")
 OUT.mkdir(parents=True, exist_ok=True)
 EPS = 1.0e-12
 RNG = np.random.default_rng(2026111802)
