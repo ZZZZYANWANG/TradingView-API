@@ -28,6 +28,7 @@ jobs:
           MKL_NUM_THREADS: '2'
         run: |
           mkdir -p research_outputs/fluid_network
+          sed -i 's/corr=dv.corr().fillna(0).to_numpy();/corr=dv.corr().fillna(0).to_numpy(copy=True);/' research/fluid_network/run.py
           python -m py_compile research/fluid_network/run.py
           python research/fluid_network/run.py | tee research_outputs/fluid_network/run.log
       - name: Upload evidence
