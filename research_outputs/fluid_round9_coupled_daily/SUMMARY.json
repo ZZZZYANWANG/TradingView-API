@@ -1,0 +1,76 @@
+{
+  "completed_utc": "2026-11-18 02:57:08.809543+00:00",
+  "data": {
+    "retained_symbols": [
+      "ADAUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "SOLUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 17030,
+    "min_date": "2021-01-01 00:00:00+00:00",
+    "max_date": "2026-10-31 00:00:00+00:00",
+    "errors": [
+      {
+        "market": "perp",
+        "symbol": "XRPUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=XRPUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "LINKUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=LINKUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "BTCUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "ETHUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=ETHUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "BNBUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=BNBUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "ADAUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=ADAUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "DOGEUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=DOGEUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "market": "perp",
+        "symbol": "SOLUSDT",
+        "error": "https://fapi.binance.com/fapi/v1/klines:HTTPError:451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=SOLUSDT&interval=1d&startTime=1609459200000&endTime=1793491200000&limit=1500 | https://fapi1.binance.com/fapi/v1/klines:JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+      }
+    ]
+  },
+  "validation_passers": 0,
+  "promoted": [],
+  "protocol": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "holdout": "2025-2026-10",
+    "horizons_days": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ],
+    "cost_bp_one_way": 5.0,
+    "holdout_policy": "computed only after validation pass"
+  }
+}
