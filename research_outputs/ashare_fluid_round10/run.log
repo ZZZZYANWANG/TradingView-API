@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/ashare_fluid_round10/run.py", line 213, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/ashare_fluid_round10/run.py", line 197, in main
+    raw,audit=load();d,cands,base=panel(raw);chosen,sgn,selection=select(d,cands);d['factor']=cs_z(d.assign(tmp=sgn*d[chosen]),'tmp')
+              ^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/ashare_fluid_round10/run.py", line 66, in load
+    u=universe(); frames=[];errors=[];t=time.time()
+      ^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/ashare_fluid_round10/run.py", line 45, in universe
+    raise RuntimeError(err)
+RuntimeError: ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
