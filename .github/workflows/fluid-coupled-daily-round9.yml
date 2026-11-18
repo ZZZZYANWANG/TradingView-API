@@ -1,0 +1,51 @@
+name: Fluid Coupled Daily Round 9
+
+on:
+  push:
+    branches:
+      - research-fluid-coupled-daily-round9-20261118
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests tabulate
+      - name: Run daily coupled-layer validation
+        run: |
+          rm -rf research_outputs/fluid_round9_coupled_daily
+          mkdir -p research_outputs/fluid_round9_coupled_daily
+          python research/fluid_round9/run_coupled_daily.py 2>&1 | tee research_outputs/fluid_round9_coupled_daily/run.log
+      - name: Commit evidence
+        if: always()
+        run: |
+          mkdir -p research_outputs/fluid_round9_coupled_daily
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A research_outputs/fluid_round9_coupled_daily
+          if ! git diff --cached --quiet; then
+            git commit -m 'research(temp): record daily coupled-layer fluid evidence'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-coupled-daily-round9-results
+          path: research_outputs/fluid_round9_coupled_daily
+          if-no-files-found: warn
+          retention-days: 14
