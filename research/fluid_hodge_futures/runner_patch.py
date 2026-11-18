@@ -3,6 +3,7 @@ from pathlib import Path
 path = Path(__file__).with_name("run.py")
 source = path.read_text(encoding="utf-8")
 source = source.replace("to_numpy(dtype=float)", "to_numpy(dtype=float, copy=True)")
+source = source.replace("stack(dropna=False)", "stack()")
 start = source.index("def daily_ic_series(")
 end = source.index("\ndef ic_summary(", start)
 replacement = '''def daily_ic_series(factor: pd.DataFrame, target: pd.DataFrame, dates: pd.Index, cols: list[str]) -> pd.Series:
