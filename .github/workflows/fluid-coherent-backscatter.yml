@@ -1,0 +1,54 @@
+name: fluid-coherent-backscatter
+
+on:
+  push:
+    branches:
+      - research-fluid-coherent-backscatter-20261118
+    paths:
+      - research/fluid_coherent_backscatter/**
+      - .github/workflows/fluid-coherent-backscatter.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-fluid-coherent-backscatter-20261118
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn requests
+      - name: Build focused experiment
+        run: |
+          mkdir -p research_outputs/fluid_coherent_backscatter
+          python research/fluid_coherent_backscatter/build.py
+          python -m py_compile research/fluid_coherent_backscatter/run.py
+      - name: Run focused coherent-backscatter research
+        env:
+          PYTHONHASHSEED: '0'
+        run: |
+          set -o pipefail
+          python research/fluid_coherent_backscatter/run.py | tee research_outputs/fluid_coherent_backscatter/run.log
+      - name: Commit compact evidence
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/fluid_coherent_backscatter research_outputs/fluid_coherent_backscatter
+          git commit -m "research(results): focused coherent backscatter [skip ci]" || exit 0
+          git push origin HEAD:research-fluid-coherent-backscatter-20261118
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-coherent-backscatter-evidence
+          path: research_outputs/fluid_coherent_backscatter
+          if-no-files-found: warn
+          retention-days: 14
