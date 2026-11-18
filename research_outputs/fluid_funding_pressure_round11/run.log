@@ -1,0 +1,81 @@
+binance=160/1820 spot=160 perp=0
+binance=320/1820 spot=320 perp=0
+binance=480/1820 spot=480 perp=0
+binance=640/1820 spot=640 perp=0
+binance=800/1820 spot=800 perp=0
+binance=960/1820 spot=910 perp=50
+binance=1120/1820 spot=910 perp=210
+binance=1280/1820 spot=910 perp=370
+binance=1440/1820 spot=910 perp=530
+binance=1600/1820 spot=910 perp=690
+binance=1760/1820 spot=910 perp=850
+aux=300/1820 premium=300 funding=0
+aux=600/1820 premium=600 funding=0
+aux=900/1820 premium=900 funding=0
+aux=1200/1820 premium=910 funding=290
+aux=1500/1820 premium=910 funding=590
+aux=1800/1820 premium=910 funding=890
+{
+  "completed_utc": "2026-11-18 05:46:21.614094+00:00",
+  "data": {
+    "requested_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 663898,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 664378,
+    "perp_rows": 664080,
+    "errors": []
+  },
+  "aux_errors": [],
+  "mechanism": "funding and premium-index boundary pressure, source-sink, impedance and enthalpy transport",
+  "families": [
+    "stored_pressure",
+    "pressure_discharge",
+    "pressure_work",
+    "enthalpy_flux",
+    "acoustic_impedance",
+    "boundary_absorption",
+    "baroclinic_torque",
+    "pressure_mismatch"
+  ],
+  "validation_passers": 2,
+  "promoted_count": 0,
+  "promoted": [],
+  "governance": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "confirmation": "2025 only after gate",
+    "shadow": "2026",
+    "strong_baseline_contains_raw_funding_and_premium_states": true,
+    "cost_bp_one_way": 2.0
+  }
+}

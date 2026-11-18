@@ -1,0 +1,64 @@
+{
+  "completed_utc": "2026-11-18 05:46:21.614094+00:00",
+  "data": {
+    "requested_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "retained_symbols": [
+      "ADAUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "BTCUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "ETCUSDT",
+      "ETHUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "SOLUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "rows": 663898,
+    "min_time": "2021-01-01 00:00:00+00:00",
+    "max_time": "2026-10-31 23:00:00+00:00",
+    "spot_rows": 664378,
+    "perp_rows": 664080,
+    "errors": []
+  },
+  "aux_errors": [],
+  "mechanism": "funding and premium-index boundary pressure, source-sink, impedance and enthalpy transport",
+  "families": [
+    "stored_pressure",
+    "pressure_discharge",
+    "pressure_work",
+    "enthalpy_flux",
+    "acoustic_impedance",
+    "boundary_absorption",
+    "baroclinic_torque",
+    "pressure_mismatch"
+  ],
+  "validation_passers": 2,
+  "promoted_count": 0,
+  "promoted": [],
+  "governance": {
+    "development": "2021-2022",
+    "validation": "2023-2024",
+    "confirmation": "2025 only after gate",
+    "shadow": "2026",
+    "strong_baseline_contains_raw_funding_and_premium_states": true,
+    "cost_bp_one_way": 2.0
+  }
+}
