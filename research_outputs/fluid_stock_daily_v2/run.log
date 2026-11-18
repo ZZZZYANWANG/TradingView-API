@@ -1,0 +1,117 @@
+login success!
+snapshot 2017-01-15 members=300
+snapshot 2017-04-15 members=300
+snapshot 2017-07-15 members=300
+snapshot 2017-10-15 members=300
+snapshot 2018-01-15 members=300
+snapshot 2018-04-15 members=300
+snapshot 2018-07-15 members=300
+snapshot 2018-10-15 members=300
+snapshot 2019-01-15 members=300
+snapshot 2019-04-15 members=300
+snapshot 2019-07-15 members=300
+snapshot 2019-10-15 members=300
+snapshot 2020-01-15 members=300
+snapshot 2020-04-15 members=300
+snapshot 2020-07-15 members=300
+snapshot 2020-10-15 members=300
+snapshot 2021-01-15 members=300
+snapshot 2021-04-15 members=300
+snapshot 2021-07-15 members=300
+snapshot 2021-10-15 members=300
+snapshot 2022-01-15 members=300
+snapshot 2022-04-15 members=300
+snapshot 2022-07-15 members=300
+snapshot 2022-10-15 members=300
+snapshot 2023-01-15 members=300
+snapshot 2023-04-15 members=300
+snapshot 2023-07-15 members=300
+snapshot 2023-10-15 members=300
+snapshot 2024-01-15 members=300
+snapshot 2024-04-15 members=300
+snapshot 2024-07-15 members=300
+snapshot 2024-10-15 members=300
+snapshot 2025-01-15 members=300
+snapshot 2025-04-15 members=300
+snapshot 2025-07-15 members=300
+snapshot 2025-10-15 members=300
+snapshot 2026-01-15 members=300
+snapshot 2026-04-15 members=300
+snapshot 2026-07-15 members=300
+snapshot 2026-10-15 members=300
+logout success!
+login success!
+batch pid progress=10/60 usable=10
+login success!
+batch pid progress=10/60 usable=10
+batch pid progress=20/60 usable=20
+batch pid progress=20/60 usable=20
+batch pid progress=30/60 usable=30
+batch pid progress=30/60 usable=30
+batch pid progress=40/60 usable=40
+batch pid progress=40/60 usable=40
+batch pid progress=50/60 usable=50
+batch pid progress=50/60 usable=50
+batch pid progress=60/60 usable=60
+batch pid progress=60/60 usable=60
+logout success!
+logout success!
+login success!
+snapshot 2017-01-15 members=300
+snapshot 2017-04-15 members=300
+snapshot 2017-07-15 members=300
+snapshot 2017-10-15 members=300
+snapshot 2018-01-15 members=300
+snapshot 2018-04-15 members=300
+snapshot 2018-07-15 members=300
+snapshot 2018-10-15 members=300
+snapshot 2019-01-15 members=300
+snapshot 2019-04-15 members=300
+snapshot 2019-07-15 members=300
+snapshot 2019-10-15 members=300
+snapshot 2020-01-15 members=300
+snapshot 2020-04-15 members=300
+snapshot 2020-07-15 members=300
+snapshot 2020-10-15 members=300
+snapshot 2021-01-15 members=300
+snapshot 2021-04-15 members=300
+snapshot 2021-07-15 members=300
+snapshot 2021-10-15 members=300
+snapshot 2022-01-15 members=300
+snapshot 2022-04-15 members=300
+snapshot 2022-07-15 members=300
+snapshot 2022-10-15 members=300
+snapshot 2023-01-15 members=300
+snapshot 2023-04-15 members=300
+snapshot 2023-07-15 members=300
+snapshot 2023-10-15 members=300
+snapshot 2024-01-15 members=300
+snapshot 2024-04-15 members=300
+snapshot 2024-07-15 members=300
+snapshot 2024-10-15 members=300
+snapshot 2025-01-15 members=300
+snapshot 2025-04-15 members=300
+snapshot 2025-07-15 members=300
+snapshot 2025-10-15 members=300
+snapshot 2026-01-15 members=300
+snapshot 2026-04-15 members=300
+snapshot 2026-07-15 members=300
+snapshot 2026-10-15 members=300
+logout success!
+daily downloads=20/120 usable=20
+daily downloads=40/120 usable=40
+daily downloads=60/120 usable=60
+daily downloads=80/120 usable=80
+daily downloads=100/120 usable=100
+daily downloads=120/120 usable=120
+Traceback (most recent call last):
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_daily_v2.py", line 123, in <module>
+    main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_daily_v2.py", line 108, in main
+    daily.main()
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_daily.py", line 126, in main
+    peer_values, graph_records = module.dynamic_peers(
+                                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/TradingView-API/TradingView-API/research/fluid_stock_graph/run_research.py", line 220, in dynamic_peers
+    active &= coverage
+ValueError: output array is read-only
