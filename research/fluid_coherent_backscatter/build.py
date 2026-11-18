@@ -42,12 +42,12 @@ replacement = '''    candidates: dict[str, dict[str, object]] = {}
                 daily_sample(zframe(event.rolling(hours, max(3, hours // 2)).mean()), 3),
             )
 
-    for scale in [0.5, 1.0, 2.0, 4.0]:
-        bounded = v * np.tanh((-states["subgrid"]).clip(lower=0) / scale) * coherence_gate
+    for amplitude_scale in [0.5, 1.0, 2.0, 4.0]:
+        bounded = v * np.tanh((-states["subgrid"]).clip(lower=0) / amplitude_scale) * coherence_gate
         for hours in [6, 12, 24, 48]:
             add(
                 "bounded_backscatter",
-                f"bounded_s{scale}_h{hours}",
+                f"bounded_s{amplitude_scale}_h{hours}",
                 daily_sample(zframe(bounded.rolling(hours, max(3, hours // 2)).mean()), 3),
             )
 
