@@ -30,6 +30,7 @@ jobs:
           PYTHONHASHSEED: '0'
         run: |
           mkdir -p research_outputs/fluid_reattachment_reservoir
+          sed -i 's/issue = issue.where(issue_mask\[:, None\], 0.0)/issue.loc[~issue_mask, :] = 0.0/' research/fluid_reattachment_reservoir/run.py
           python -m py_compile research/fluid_reattachment_reservoir/run.py
           python research/fluid_reattachment_reservoir/run.py | tee research_outputs/fluid_reattachment_reservoir/run.log
       - name: Commit compact evidence to research branch
