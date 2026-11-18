@@ -1,0 +1,71 @@
+name: fluid-reattachment-frozen-daily
+
+on:
+  push:
+    branches:
+      - research-fluid-reattachment-frozen-daily-20261118
+    paths:
+      - .github/workflows/fluid-reattachment-frozen-daily.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-fluid-reattachment-frozen-daily-20261118
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn requests
+      - name: Build frozen-signal daily execution experiment
+        run: |
+          mkdir -p research/fluid_reattachment_frozen_daily research_outputs/fluid_reattachment_frozen_daily
+          cp research/fluid_reattachment_reservoir/run.py research/fluid_reattachment_frozen_daily/run.py
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('research/fluid_reattachment_frozen_daily/run.py')
+          s = p.read_text()
+          s = s.replace('research_outputs/fluid_reattachment_reservoir', 'research_outputs/fluid_reattachment_frozen_daily')
+          s = s.replace('HORIZONS = [72, 120, 240, 480]', 'HORIZONS = [120]')
+          s = s.replace('CADENCES = [1, 2, 3, 5]', 'CADENCES = [1, 2, 3, 5, 7]')
+          s = s.replace('issue = issue.where(issue_mask[:, None], 0.0)', 'issue.loc[~issue_mask, :] = 0.0')
+          marker = '    labels = {\n'
+          insertion = '''    add("frozen_reattach_mean6", "frozen_reattach_mean6", base_features["reattach_mean6"])\n    add("frozen_reattach_mean24", "frozen_reattach_mean24", base_features["reattach_mean24"])\n    families = {k: v for k, v in families.items() if k.startswith("frozen_reattach_")}\n\n'''
+          if marker not in s:
+              raise SystemExit('frozen candidate insertion point not found')
+          s = s.replace(marker, insertion + marker, 1)
+          s = s.replace('    parents = list(base_features)\n', '    parents = [p for p in base_features if p not in {"reattach_mean6", "reattach_mean24"}]\n')
+          s = s.replace('event-reset network-boundary reattachment reservoir sampled once daily', 'frozen six-hour and twenty-four-hour network reattachment means sampled once daily')
+          s = s.replace('cadence chosen by worst preperiod 5bp Sharpe', 'formula and 120-hour horizon frozen; cadence chosen by worst preperiod 5bp Sharpe')
+          p.write_text(s)
+          PY
+          python -m py_compile research/fluid_reattachment_frozen_daily/run.py
+      - name: Run frozen-signal daily experiment
+        env:
+          PYTHONHASHSEED: '0'
+        run: |
+          set -o pipefail
+          python research/fluid_reattachment_frozen_daily/run.py | tee research_outputs/fluid_reattachment_frozen_daily/run.log
+      - name: Commit code and compact evidence
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/fluid_reattachment_frozen_daily research_outputs/fluid_reattachment_frozen_daily
+          git commit -m "research(results): frozen daily reattachment execution [skip ci]" || exit 0
+          git push origin HEAD:research-fluid-reattachment-frozen-daily-20261118
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-reattachment-frozen-daily-evidence
+          path: research_outputs/fluid_reattachment_frozen_daily
+          if-no-files-found: warn
+          retention-days: 14
