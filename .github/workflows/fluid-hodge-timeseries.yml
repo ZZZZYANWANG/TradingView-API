@@ -1,0 +1,68 @@
+name: fluid-hodge-timeseries-research
+
+on:
+  push:
+    branches:
+      - research-fluid-hodge-timeseries-20261118
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn yfinance pyarrow
+      - name: Apply shared compatibility patch
+        run: python research/fluid_hodge_futures/runner_patch.py
+      - name: Compile programs
+        run: |
+          python -m py_compile research/fluid_hodge_futures/run.py
+          python -m py_compile research/fluid_hodge_futures/refine_enstrophy.py
+          python -m py_compile research/fluid_hodge_futures/refine_timeseries.py
+      - name: Run graph-vorticity time-series study
+        env:
+          PYTHONHASHSEED: '0'
+          OUT_DIR: research_outputs/fluid_hodge_timeseries
+        run: |
+          mkdir -p research_outputs/fluid_hodge_timeseries
+          set -o pipefail
+          python research/fluid_hodge_futures/refine_timeseries.py | tee research_outputs/fluid_hodge_timeseries/run.log
+      - name: Print decision evidence
+        if: always()
+        run: |
+          for f in family_winners.csv validation_results.csv holdout_results.csv selected_factor_spec.json decision.json; do
+            if [ -f "research_outputs/fluid_hodge_timeseries/$f" ]; then
+              echo "===== $f ====="
+              cat "research_outputs/fluid_hodge_timeseries/$f"
+            fi
+          done
+      - name: Archive result directory
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          src = Path('research_outputs/fluid_hodge_timeseries')
+          if src.exists():
+              shutil.make_archive('fluid-hodge-timeseries-evidence', 'zip', src)
+          PY
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-hodge-timeseries-evidence
+          path: |
+            research_outputs/fluid_hodge_timeseries
+            fluid-hodge-timeseries-evidence.zip
+          if-no-files-found: warn
+          retention-days: 7
