@@ -1,0 +1,46 @@
+name: Fluid non-normal operator round21
+
+on:
+  push:
+    branches:
+      - research-fluid-operator-round21-20261119
+    paths:
+      - 'research/fluid_round21/**'
+      - '.github/workflows/fluid-round21-nonnormal-operator.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install research dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests pyarrow tabulate
+      - name: Run causal non-normal operator research
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python research/fluid_round21/run_nonnormal_operator_round21.py 2>&1 | tee fluid-round21.log
+      - name: Preserve log on failure
+        if: always()
+        run: |
+          mkdir -p research_outputs/fluid_nonnormal_operator_round21
+          cp fluid-round21.log research_outputs/fluid_nonnormal_operator_round21/run.log || true
+      - name: Upload frozen evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-nonnormal-operator-round21-results
+          path: research_outputs/fluid_nonnormal_operator_round21
+          if-no-files-found: error
+          retention-days: 14
