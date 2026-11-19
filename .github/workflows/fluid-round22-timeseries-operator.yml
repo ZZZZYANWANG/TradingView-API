@@ -1,0 +1,46 @@
+name: Fluid time-series operator round22
+
+on:
+  push:
+    branches:
+      - research-fluid-timeseries-operator-round22-20261119
+    paths:
+      - 'research/fluid_round22/**'
+      - '.github/workflows/fluid-round22-timeseries-operator.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install research dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests pyarrow tabulate huggingface_hub
+      - name: Run time-series non-normal transport research
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python research/fluid_round22/run_timeseries_operator_round22.py 2>&1 | tee fluid-round22.log
+      - name: Preserve log on failure
+        if: always()
+        run: |
+          mkdir -p research_outputs/fluid_timeseries_operator_round22
+          cp fluid-round22.log research_outputs/fluid_timeseries_operator_round22/run.log || true
+      - name: Upload frozen evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fluid-timeseries-operator-round22-results
+          path: research_outputs/fluid_timeseries_operator_round22
+          if-no-files-found: error
+          retention-days: 14
