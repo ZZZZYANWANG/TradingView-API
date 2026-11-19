@@ -12,7 +12,10 @@ if str(ROUND10) not in sys.path:
 
 import run_characteristic_network as research  # noqa: E402
 
-research.source.MAX_CODES = 90
+# The inherited Baostock loader requires at least 100 usable histories. Freeze a
+# 120-code point-in-time replication so the run remains smaller than the formal
+# 180-code study while satisfying the source audit contract.
+research.source.MAX_CODES = 120
 research.source.WORKERS = 6
 research.OUT = Path("research_outputs/ashare_fluid_round15_reduced")
 research.OUT.mkdir(parents=True, exist_ok=True)
