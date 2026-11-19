@@ -1,0 +1,1 @@
+Round26 parent-orthogonal residual constitutive computation trigger. Frozen on 2026-11-19.
