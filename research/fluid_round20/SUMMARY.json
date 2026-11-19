@@ -1,0 +1,16 @@
+{
+  "artifact_sha256": "b051df7d23b61a30f168a71b1852bece6d1708bcc6f7d9a5e71808169f422650",
+  "candidate_columns": 48,
+  "confirmed": [],
+  "decision": "no_trade_admission",
+  "development_tests": 672,
+  "discovery_holdout_opened": 0,
+  "discovery_promoted": [],
+  "discovery_validation_passed": 0,
+  "frozen_identities": 4,
+  "raw_primitives": 16,
+  "replication_holdout_opened": 0,
+  "replication_validation_passed": 0,
+  "run_id": 44516352808,
+  "validation_period": "2023-2024"
+}
