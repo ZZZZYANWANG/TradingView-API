@@ -7,6 +7,12 @@ on:
     paths:
       - 'research/fluid_round26/**'
       - '.github/workflows/fluid-round26-parent-orthogonal.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'research/fluid_round26/**'
+      - '.github/workflows/fluid-round26-parent-orthogonal.yml'
   workflow_dispatch:
 
 permissions:
