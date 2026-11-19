@@ -7,6 +7,12 @@ on:
     paths:
       - 'research/fluid_round22/**'
       - '.github/workflows/fluid-round22-timeseries-operator.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'research/fluid_round22/**'
+      - '.github/workflows/fluid-round22-timeseries-operator.yml'
   workflow_dispatch:
 
 permissions:
