@@ -1,0 +1,3 @@
+Trigger GitHub Actions execution for the frozen characteristic-wave round14 experiment.
+Timestamp: 2026-11-19T01:45:00+09:00
+The trigger contains no research parameter changes.
