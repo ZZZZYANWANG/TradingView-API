@@ -1,16 +1,16 @@
 name: Fluid Characteristic Wave Round 14 Dispatch
 
 on:
-  issues:
-    types: [opened, reopened]
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 permissions:
   contents: write
-  issues: read
+  pull-requests: read
 
 jobs:
   research:
-    if: github.event.issue.title == 'run-fluid-characteristic-wave-round14-20261119'
+    if: github.event.pull_request.title == 'run-fluid-characteristic-wave-round14-20261119'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
