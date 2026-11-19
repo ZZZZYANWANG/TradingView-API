@@ -7,6 +7,12 @@ on:
     paths:
       - 'research/fluid_round25/**'
       - '.github/workflows/fluid-round25-hierarchical-constitutive.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'research/fluid_round25/**'
+      - '.github/workflows/fluid-round25-hierarchical-constitutive.yml'
   workflow_dispatch:
 
 permissions:
