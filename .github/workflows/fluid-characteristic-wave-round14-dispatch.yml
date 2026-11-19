@@ -1,16 +1,15 @@
 name: Fluid Characteristic Wave Round 14 Dispatch
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+  create:
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pull-requests: read
 
 jobs:
   research:
-    if: github.event.pull_request.title == 'run-fluid-characteristic-wave-round14-20261119'
+    if: github.event_name == 'workflow_dispatch' || (github.event.ref_type == 'branch' && github.event.ref == 'dispatch-fluid-characteristic-wave-round14-event')
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
