@@ -4,50 +4,56 @@ import json
 import traceback
 from pathlib import Path
 
+import requests
+
 OUT = Path("research_outputs/ashare_event_absorption_probe")
 OUT.mkdir(parents=True, exist_ok=True)
 
 
-def frame_info(frame):
+def eastmoney_probe(report_date: str) -> dict:
+    url = "https://datacenter-web.eastmoney.com/api/data/v1/get"
+    params = {
+        "reportName": "RPT_LICO_FN_CPD",
+        "columns": "ALL",
+        "filter": f"(REPORTDATE='{report_date[:4]}-{report_date[4:6]}-{report_date[6:]}')",
+        "pageNumber": 1,
+        "pageSize": 10,
+        "sortColumns": "NOTICE_DATE,SECURITY_CODE",
+        "sortTypes": "-1,1",
+        "source": "WEB",
+        "client": "WEB",
+    }
+    response = requests.get(url, params=params, timeout=(10, 30))
+    response.raise_for_status()
+    payload = response.json()
+    result = payload.get("result") or {}
+    rows = result.get("data") or []
     return {
-        "shape": list(frame.shape),
-        "columns": [str(c) for c in frame.columns],
-        "head": frame.head(3).astype(str).to_dict(orient="records"),
+        "url": response.url,
+        "success": payload.get("success"),
+        "message": payload.get("message"),
+        "pages": result.get("pages"),
+        "count": result.get("count"),
+        "keys": sorted(rows[0].keys()) if rows else [],
+        "head": rows[:3],
     }
 
 
 def main():
     report = {}
-    try:
-        import akshare as ak
-        report["akshare_version"] = getattr(ak, "__version__", "unknown")
-        for date in ["20231231", "20240630", "20241231", "20250331"]:
-            key = f"stock_yjbb_em_{date}"
-            try:
-                df = ak.stock_yjbb_em(date=date)
-                report[key] = frame_info(df)
-                if len(df):
-                    df.head(100).to_csv(OUT / f"{key}.csv", index=False)
-                    break
-            except Exception as exc:
-                report[key] = {"error": repr(exc), "traceback": traceback.format_exc()[-3000:]}
-        for func_name, kwargs in [
-            ("stock_yjkb_em", {"date": "20241231"}),
-            ("stock_yjyg_em", {"date": "20241231"}),
-            ("index_stock_cons", {"symbol": "000300"}),
-        ]:
-            try:
-                func = getattr(ak, func_name)
-                df = func(**kwargs)
-                report[func_name] = frame_info(df)
-            except Exception as exc:
-                report[func_name] = {"error": repr(exc), "traceback": traceback.format_exc()[-3000:]}
-    except Exception as exc:
-        report["akshare_import"] = {"error": repr(exc), "traceback": traceback.format_exc()[-3000:]}
+    for date in ["2024-12-31", "2024-06-30", "2023-12-31"]:
+        key = f"eastmoney_{date}"
+        try:
+            report[key] = eastmoney_probe(date.replace("-", ""))
+            if report[key].get("head"):
+                break
+        except Exception as exc:
+            report[key] = {"error": repr(exc), "traceback": traceback.format_exc()[-3000:]}
 
     try:
         import baostock as bs
-        report["baostock_login"] = str(bs.login())
+        login = bs.login()
+        report["baostock_login"] = {"code": login.error_code, "msg": login.error_msg}
         rs = bs.query_history_k_data_plus(
             "sh.600000",
             "date,code,open,high,low,close,preclose,volume,amount,turn,pctChg,tradestatus,isST",
@@ -84,6 +90,22 @@ def main():
             "rows": len(rows60),
             "head": rows60[:5],
         }
+        for date in ["2019-12-31", "2024-12-31"]:
+            for label, func in [("hs300", bs.query_hs300_stocks), ("zz500", bs.query_zz500_stocks)]:
+                try:
+                    rsu = func(date)
+                    rowsu = []
+                    while rsu.error_code == "0" and rsu.next():
+                        rowsu.append(rsu.get_row_data())
+                    report[f"{label}_{date}"] = {
+                        "error_code": rsu.error_code,
+                        "error_msg": rsu.error_msg,
+                        "fields": rsu.fields,
+                        "rows": len(rowsu),
+                        "head": rowsu[:3],
+                    }
+                except Exception as exc:
+                    report[f"{label}_{date}"] = {"error": repr(exc)}
         bs.logout()
     except Exception as exc:
         report["baostock"] = {"error": repr(exc), "traceback": traceback.format_exc()[-3000:]}
