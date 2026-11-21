@@ -3,6 +3,8 @@ name: Stock Reversal Upgrade Existing Runner
 on:
   push:
     branches: ["research-stock-reversal-upgrade-20261121"]
+  pull_request:
+    branches: ["research-stock-reversal-upgrade-20261121"]
   workflow_dispatch:
 
 permissions:
