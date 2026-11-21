@@ -3,6 +3,8 @@ name: Futures Response Upgrade Existing Runner
 on:
   push:
     branches: ["research-futures-response-upgrade-20261121"]
+  pull_request:
+    branches: ["research-futures-response-upgrade-20261121"]
   workflow_dispatch:
 
 permissions:
