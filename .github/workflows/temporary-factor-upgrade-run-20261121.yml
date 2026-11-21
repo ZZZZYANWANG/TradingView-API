@@ -1,0 +1,89 @@
+name: Temporary Factor Upgrade Run 20261121
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/temporary-factor-upgrade-run-20261121.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stock-reversal-upgrade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-stock-reversal-upgrade-20261121
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests pyarrow baostock
+      - name: Execute stock upgrade
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          python research/ashare_event_absorption/run_factor_upgrade_entry.py 2>&1 | tee stock_factor_upgrade.log
+      - name: Surface stock decision
+        if: always()
+        run: |
+          if [ -f research_outputs/stock_reversal_upgrade_20261121/decision.json ]; then
+            echo 'STOCK_DECISION_BEGIN'
+            cat research_outputs/stock_reversal_upgrade_20261121/decision.json
+            echo 'STOCK_DECISION_END'
+          fi
+      - name: Upload stock evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stock-reversal-upgrade-20261121
+          path: |
+            research_outputs/stock_reversal_upgrade_20261121
+            stock_factor_upgrade.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  futures-response-upgrade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-futures-response-upgrade-20261121
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests pyarrow akshare
+      - name: Execute futures upgrades
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          python research/fluid_hodge_china_futures/run_factor_upgrade_entry.py 2>&1 | tee futures_factor_upgrade.log
+      - name: Surface futures decision
+        if: always()
+        run: |
+          if [ -f research_outputs/futures_response_upgrade_20261121/decision.json ]; then
+            echo 'FUTURES_DECISION_BEGIN'
+            cat research_outputs/futures_response_upgrade_20261121/decision.json
+            echo 'FUTURES_DECISION_END'
+          fi
+      - name: Upload futures evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: futures-response-upgrade-20261121
+          path: |
+            research_outputs/futures_response_upgrade_20261121
+            futures_factor_upgrade.log
+          if-no-files-found: warn
+          retention-days: 14
