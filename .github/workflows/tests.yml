@@ -1,33 +1,47 @@
-name: Tests
+name: Futures Response Upgrade Existing Runner
 
 on:
   push:
-  pull_request:
-    branches:
-      - main
+    branches: ["research-futures-response-upgrade-20261121"]
   workflow_dispatch:
-  schedule:
-  - cron: '0 0 * * *'
+
+permissions:
+  contents: read
 
 jobs:
-  Tests:
+  futures-response-upgrade:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 18.x, 19.x]
-
+    timeout-minutes: 180
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm ci
-    - name: Run tests
-      run: npm test
-      env:
-        SESSION: ${{ secrets.TW_SESSION }}
-        SIGNATURE: ${{ secrets.TW_SIGNATURE }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn requests pyarrow akshare
+      - name: Execute upgrade study
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          python research/fluid_hodge_china_futures/run_factor_upgrade_entry.py 2>&1 | tee futures_factor_upgrade.log
+      - name: Surface decision
+        if: always()
+        run: |
+          if [ -f research_outputs/futures_response_upgrade_20261121/decision.json ]; then
+            echo 'FUTURES_DECISION_BEGIN'
+            cat research_outputs/futures_response_upgrade_20261121/decision.json
+            echo 'FUTURES_DECISION_END'
+          fi
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: futures-response-upgrade-20261121
+          path: |
+            research_outputs/futures_response_upgrade_20261121
+            futures_factor_upgrade.log
+          if-no-files-found: warn
+          retention-days: 14
