@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
     paths: [".github/workflows/temporary-factor-upgrade-run-20261121.yml"]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
   workflow_dispatch:
 
 permissions:
